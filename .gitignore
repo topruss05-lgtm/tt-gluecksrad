@@ -1,0 +1,15 @@
+.DS_Store
+.claude/
+.superpowers/
+
+# Large binary files (3D prints, scans, generated images)
+*.stl
+*.3mf
+*.pdf
+*.png
+chip.py
+diamond.py
+
+# Archive (scanned exercises — large SQLite + PDFs)
+archiv/
+chip/

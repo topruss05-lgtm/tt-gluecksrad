@@ -1,0 +1,2717 @@
+[
+    {
+        "id": 625,
+        "name": "VH-Flick nach kurzem Schupf",
+        "description": "Spieler A serviert kurzen Unterschnitt in die RH von B → B schupft kurz in die VH von A → A spielt VH-Flick diagonal weit in die VH von B → Punkt frei. Variation: B schupft mit mehr Schnitt oder variiert die Platzierung innerhalb der VH-Hälfte.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 626,
+        "name": "RH-Flick oder RH-Topspin (Längen-Entscheidung)",
+        "description": "A serviert kurzen US in die Tischmitte → B schupft entweder KURZ oder LANG in die RH von A → Wenn kurz: A spielt RH-Flick. Wenn lang: A spielt RH-Topspin → Punkt frei. Kernkompetenz: Entscheidungsfähigkeit zwischen zwei verschiedenen Techniken basierend auf Balllänge.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 627,
+        "name": "Topspin auf den Ellbogen",
+        "description": "A serviert langen Topspin in die RH von B → B spielt mittleren RH-Topspin in die Mitte → A spielt VH-Topspin auf den Spielellbogen (Überkreuzungspunkt) von B → Punkt frei. Variation: B erhöht Tempo; B spielt Topspin in jede Position.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 628,
+        "name": "Rückhand-Sidespin-Aufschlag → VH-Topspin parallel",
+        "description": "A serviert Reverse-Sidespin weit in die VH von B → Spin zieht den Return in die VH von A → A spielt schnellen VH-Topspin parallel → Punkt frei.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 629,
+        "name": "Weiter Aufschlag RH + Zwei-Wege-Entscheidung",
+        "description": "A serviert sehr weit kurz in die RH von B → B returniert entweder kurz in die VH von A ODER lang in die RH von A → Kurz: A spielt VH-Flick diagonal. Lang: A spielt RH-Topspin parallel → Punkt frei. Variation: B returniert in 4 Zonen (kurz VH, kurz RH, lang VH, lang RH).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 630,
+        "name": "Spin-Erkennung (US oder TS?)",
+        "description": "A serviert halblangen US\/Sidespin in die Mitte → B spielt entweder Schupf (US) ODER mittleren Topspin in die RH von A → A passt Technik an: RH-Topspin gegen US (Schläger tiefer, mehr nach oben) oder RH-Topspin gegen TS (Schläger höher, mehr nach vorne) → Punkt frei. Kernkompetenz: Spin-Lesen und Schlägerwinkel-Anpassung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 631,
+        "name": "Freier Aufschlag → Freier Return → Pflichtangriff",
+        "description": "A spielt beliebigen Aufschlag → B returniert frei → A MUSS den 3. Ball angreifen (Flick bei kurzem Return, Topspin bei langem) → Punkt frei. Zwingt konsequente Angriffsmentalität auf.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 632,
+        "name": "Halblanges Aufschlag-System nach Holländer (NRW)",
+        "description": "A serviert kurz in die Mitte → B schupft lang in die RH → A spielt 3. Ball frei (Topspin, gelegentlich in VH variieren). Varianten: (a) Kurz Mitte → Lang auf Ellbogen → 3. frei. (b) Kurz RH → Kurz Mitte → 3. frei. (c) Kurz VH → Lang in äußere VH oder RH → 3. frei.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 633,
+        "name": "RH-Flick → RH-Topspin-Nachschlag",
+        "description": "B serviert kurzen US in die RH von A → A spielt RH-Flick in die RH von B → B blockt in die RH von A → A spielt RH-Topspin in beliebige Position → Punkt frei. Kernkompetenz: Vor-Zurück-Beinarbeit (Schritt an den Tisch für Flick, Schritt zurück für Topspin).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 634,
+        "name": "Schwerer Schupf → VH-Gegenangriff",
+        "description": "B serviert halblang US auf Ellbogen von A → A spielt schnellen, langen RH-Schupf in die RH von B → B spielt mittleren RH-Topspin in die RH von A → A umläuft und spielt schnellen VH-Topspin auf den Ellbogen von B → Punkt frei. Taktik: Aggressiver Schupf erzwingt schwachen Angriff → Gegenangriff mit VH.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 635,
+        "name": "Angriff auf langen Aufschlag (Rückschläger)",
+        "description": "B serviert entweder kurz oder lang US in die RH von A → Kurz: A spielt RH-Flick. Lang: A spielt RH-Topspin → Punkt frei. Variation: B serviert in die RH oder auf den Ellbogen, A entscheidet RH oder VH.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 636,
+        "name": "Zwei VH-Topspins (3. + 5. Ball)",
+        "description": "A serviert halblangen US auf Ellbogen von B → B schupft lang in die RH von A → A umläuft, spielt langsamen, schweren VH-Topspin diagonal in die RH von B (Aufbauschlag) → B blockt in die RH von A → A spielt schnellen VH-Topspin parallel (Abschlussschlag) → Punkt frei. Kernprinzip: 3. Ball = Aufbau (spinreich, gut platziert), 5. Ball = Abschluss (schnell, richtungswechselnd).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 637,
+        "name": "RH + VH Topspin-Kombination (3. + 5. Ball, schnelle Rally)",
+        "description": "A serviert lang (Sidespin\/Topspin) in die RH von B → B spielt RH-Topspin in die RH von A → A spielt RH-Topspin in die RH von B → B blockt in die VH von A → A spielt VH-Topspin diagonal → Punkt frei.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 638,
+        "name": "7-Ball-Rahmen nach Holländer (NRW)",
+        "description": "1. Aufschlag kurz Mitte → 2. Rückschlag kurz Mitte → 3. Lang in RH → 4. RH- oder VH-Topspin diagonal → 5. Block parallel in VH → 6. VH-Topspin überall → 7. Frei. Diese Sequenz trainiert die komplette 3-Phasen-Struktur eines Ballwechsels.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 639,
+        "name": "Technikübung 4 Ballkontakte",
+        "description": "Langer Aufschlag mit US in die VH → VH-Topspin diagonal → Block in VH → VH-Topspin überall (frei). Varianten: Block auf Ellbogen\/in RH\/unregelmäßig; Aufschlag in RH → RH-Topspin statt VH-Topspin.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 640,
+        "name": "RH-VH-Wechsel (Grundübung)",
+        "description": "Partner A spielt abwechselnd in die RH-Ecke und VH-Ecke von B. B spielt RH aus der RH-Ecke → Sidestep nach rechts → VH aus der VH-Ecke → Sidestep nach links → Wiederholung. Alle Bälle zurück in eine Position von A. Varianten: (a) 2 RH + 2 VH; (b) 1 RH + 2 VH; (c) Unregelmäßig (1-2 Bälle RH, dann 1-2 VH random).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 641,
+        "name": "2-Punkt-VH-Drill",
+        "description": "Partner verteilt abwechselnd in die Mitte und weite VH von B. B spielt VH aus der Mitte → Sidestep rechts → VH aus der weiten VH → Sidestep links → Wiederholung. Coaching-Punkt: Nach dem VH-Schlag nach rechts bewegen ist schwieriger, weil der Schwung nach links zieht. Variation: 4-Punkt-VH: VH weit → Mitte → RH-Ecke → Mitte (alles VH).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 642,
+        "name": "3-Punkt-Beinarbeit",
+        "description": "Partner verteilt: VH-Ecke → Mitte → VH-Ecke → RH-Ecke. Spieler: VH (weit) → Sidestep links → VH (Mitte) → Sidestep rechts → VH (weit) → Sidestep links über Mitte → RH (RH-Ecke) → Wiederholung. Varianten: RH → VH(Mitte) → RH → VH(weit); nach 2-3 Zyklen Übergang zum freien Spiel.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 643,
+        "name": "Falkenberg-Drill (Klassiker aus Schweden)",
+        "description": "B blockt alle Bälle in eine Position. A spielt: (1) RH-Topspin aus der RH-Ecke → (2) Umsprung\/Pivot, VH-Topspin aus der RH-Ecke → (3) Sidestep rechts, VH-Topspin aus der weiten VH-Ecke → zurück zur RH-Ausgangsposition. Wiederholung. Entscheidend: Nach dem Pivot-VH sofort einen Shuffleschritt zurück zur Mitte, bevor die Bewegung zur weiten VH beginnt. Schwerpunkt immer zwischen den Füßen halten. Varianten: (a) Kleiner Falkenberg (3. Ball in die Mitte statt weite VH); (b) 4-Ball-Falkenberg (2x RH + Pivot-VH + weite VH); (c) Nach 9 Schlägen freies Spiel; (d) Start mit kurzem US-Aufschlag, Rückschläger schupft lang in RH, dann Falkenberg-Sequenz.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 644,
+        "name": "Ganztisch-VH-Abdeckung (Ma-Long-Stil)",
+        "description": "Partner\/Trainer spielt Bälle random über den ganzen Tisch. Spieler deckt den gesamten Tisch ausschließlich mit VH ab, nutzt Sidesteps und Kreuzschritte. Beginn: 2\/3 des Tisches (RH-Ecke + Mitte), Steigerung auf ganzen Tisch. Zeitlimitierte Sets: 1 Minute maximale Bewegung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 645,
+        "name": "Kleine Acht",
+        "description": "A spielt RH diagonal → B spielt RH in A Mitte; A spielt VH aus der Mitte → B spielt VH aus der Mitte → A RH. Die Ballwege bilden ein Achtermuster. Bewegung beschränkt auf RH-bis-Mitte-Zone. Ideal als Aufwärmübung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 646,
+        "name": "Große Acht",
+        "description": "Ein Spieler spielt NUR diagonal, der andere NUR parallel. A: RH diagonal → B: RH parallel → A: VH diagonal → B: VH parallel → A: RH. Deckt die volle Tischbreite ab. Beide Spieler wechseln ständig RH und VH.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 647,
+        "name": "Unregelmäßige RH\/VH-Übung",
+        "description": "Partner spielt random in die RH- oder VH-Ecke. Spieler muss lesen und reagieren, passenden RH- oder VH-Schlag spielen. Kein festes Muster. Steigerung: (a) 2-Punkt random (RH oder VH); (b) 3-Punkt random (RH, Mitte, VH); (c) Partner signalisiert spät oder nutzt Täuschung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 648,
+        "name": "Kurz-Lang-Wechsel (In-Out-Bewegung)",
+        "description": "Trainer füttert kurzen US in die VH → Spieler tritt an den Tisch, schupft kurz zurück → Trainer füttert langen US irgendwohin → Spieler tritt zurück, spielt VH-Topspin. Wiederholung. Kernbewegung: Das In-Out-Muster ist das häufigste Beinarbeitsmuster im chinesischen Tischtennis. Variation: Nach dem Topspin füttert Trainer einen schnellen Block zum Weiterspielen.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 649,
+        "name": "Ganztisch-VH-Topspin (Random)",
+        "description": "Trainer füttert mitteltempo-Topspin-Bälle an präzise, wechselnde Positionen über den ganzen Tisch. Spieler bewegt sich mit Sidesteps und Kreuzschritten und spielt überall VH-Angriff. Progression: Erst regelmäßiges Muster (weite VH → Mitte → weite RH → Mitte), dann vollständig random.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 650,
+        "name": "Kurzer-Ball-Aggression",
+        "description": "Trainer füttert kurze Bälle mit verschiedenem Spin nahe am Netz in verschiedene Positionen. Spieler bewegt sich schnell an den Tisch und greift aggressiv an (Flick, Flip, aggressiver Schupf). Variation: Wechsel zwischen kurzem und langem Ball (Spieler muss Länge lesen).",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 651,
+        "name": "3-Personen-Training",
+        "description": "Trainer füttert kurzen US in die VH → Spieler tritt ein, schupft kurz zurück → Trainer schiebt schnell lang in die RH → Spieler spielt VH-Angriff parallel → Assistent (dritte Person auf Trainerseite) returniert stark in die VH → Spieler und Assistent spielen starke VH-Rally diagonal bis zum Fehler. Ermöglicht realistische Spielsituationen im Multiball-Format.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 652,
+        "name": "Ballwechsel-Simulation (2-5 Bälle)",
+        "description": "Trainer hält 2-5 Bälle und füttert sie in einer spielähnlichen Sequenz. Jeder Ball simuliert einen realistischen Schlag. Beispiel-Sequenz 1: Kurzer US zur RH → langer TS zur VH → schneller Block zur Mitte (3 Bälle). Beispiel-Sequenz 2: Kurzer Schupf zur VH → langer Schupf zur RH → TS weit in VH → schneller Block zur RH (4 Bälle).",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 653,
+        "name": "4.-Ball-Gegenangriff",
+        "description": "Spieler serviert (kurzer US) → Trainer simuliert gegnerischen 3.-Ball-Angriff (Topspin in RH oder VH) → Spieler muss den simulierten Angriff kontern → Trainer füttert Folge-Ball zum Weiterspielen. Trainiert die kritischste Spielsituation: den Gegenangriff gegen den 3.-Ball-Angriff des Gegners.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 654,
+        "name": "Falkenberg-Multiball",
+        "description": "Trainer füttert aus dem Balleimer: TS in RH → Spieler RH-Topspin; TS in RH → Spieler Pivot-VH-Topspin; TS in weite VH → Spieler VH-Topspin. Sofort nächstes Trio. Vorteil gegenüber regulärem Falkenberg: Trainer kontrolliert Tempo exakt. Kein Rhythmusbruch durch Fehler. Kann über Spieltempo hinaus beschleunigen. Sets: 1 Minute, 30 Sekunden Pause, 3 Durchgänge.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 655,
+        "name": "Topspin aus US beidseitig",
+        "description": "Trainer füttert schweren US abwechselnd in weite VH und weite RH. Spieler eröffnet mit VH-Topspin aus VH, dann Sidestep links, RH-Topspin aus RH. Wiederholung. Variation: Mix aus US- und TS-Zuspiel (Spieler muss Schlag anpassen).",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 656,
+        "name": "Kurz-Lang-Übergang mit Seite",
+        "description": "Trainer füttert kurzen US in VH → Spieler tritt ein, schupft kurz → Trainer füttert langen US in RH → Spieler tritt zurück und um, eröffnet mit VH-Topspin aus RH-Ecke. Moderner Stil: RH-Topspin statt Umsprung.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 657,
+        "name": "Multi-Spin-Übergang",
+        "description": "Trainer füttert US zur RH → Spieler eröffnet RH-Topspin diagonal; Trainer füttert Counter zur RH → Spieler umläuft, VH-Topspin diagonal; Trainer füttert Counter zur Mitte → Spieler VH-Topspin zur RH; Trainer füttert Counter zur weiten VH → Spieler VH-Topspin diagonal oder parallel. Kombiniert Spin-Übergang (US→TS) mit Beinarbeit.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 658,
+        "name": "Farbball-Entscheidungstraining (DTTB)",
+        "description": "Trainer füttert aus einem Eimer mit gemischten gelben und weißen Bällen. Spieler muss sofort anhand der Ballfarbe entscheiden: Gelber Ball → VH-Topspin diagonal; Weißer Ball → VH-Topspin parallel. ODER: Gelber Ball → Schupf kurz zurück; Weißer Ball → Flick diagonal. Innovation: Löst das Kernproblem des klassischen Multiball: fehlende Antizipation. Farbsignal zwingt Informationsverarbeitung und Entscheidung unter Zeitdruck.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 659,
+        "name": "RH-Topspin-Serie aus Balleimer",
+        "description": "Trainer füttert kurzen Ball → Spieler spielt kurze RH; Trainer füttert langen TS in RH → Spieler RH-Topspin diagonal; Trainer füttert langen TS in Mitte → Spieler RH- oder VH-Topspin. Varianten: 1x kurze RH + 1x RH-Topspin diagonal + 1x RH-Topspin parallel. Dauer: 7-10 Minuten pro Übung, langsame Frequenz, maximale Konzentration.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 660,
+        "name": "Zwei-Tisch-Multiball",
+        "description": "Zwei Tische nebeneinander. Trainer füttert Bälle über die gesamte Doppelfläche. Spieler muss die doppelte Breite abdecken mit Kreuzschritten und explosiven Sidesteps. Für Fortgeschrittene.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "leistung",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 661,
+        "name": "RH-RH-Topspin-Rally diagonal",
+        "description": "Beide Spieler spielen kontinuierlich RH-Topspin diagonal in die RH des anderen. Ziel: 20+ fehlerfreie Wiederholungen. Start mit RH-Drive, Steigerung zu vollem Topspin. Progression: Ein Spieler spielt Topspin, der andere blockt → beide spielen Topspin.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 662,
+        "name": "RH-Topspin gegen Block (Grundübung)",
+        "description": "A spielt kontinuierlich RH-Topspin diagonal in die RH von B → B blockt konsistent zurück in die RH von A → Graduelle Temposteigerung. Variation: Blocker variiert Platzierung leicht innerhalb der RH-Hälfte.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 663,
+        "name": "RH-Topspin parallel",
+        "description": "A spielt RH-Topspin aus der RH-Ecke gerade\/parallel in die VH-Ecke von B → B blockt mit VH zurück in die RH-Ecke von A → Punkt frei. Fokus: Genauigkeit des RH-Topspin bei Richtungswechsel vom natürlichen Diagonal.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 664,
+        "name": "RH-Topspin-Eröffnung gegen Schupf",
+        "description": "A serviert kurzen US → B schupft lang in die RH-Ecke von A → A eröffnet mit RH-Topspin gegen US (Schläger offen, Ballrückseite bürsten, Bewegung nach oben) → B blockt → A spielt RH-Topspin gegen TS (Schläger geschlossener, mehr nach vorne) → Rally. Technischer Schlüssel: Anpassung zwischen RH-TS gegen US und RH-TS gegen Block.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 665,
+        "name": "Differentielles Timing (DTTB)",
+        "description": "Trainer füttert US-Multiball in die VH. Spieler eröffnet Topspin mit gezielt variiertem Kontaktpunkt: (a) Ball in der fallenden Phase kontaktieren; (b) Am höchsten Punkt; (c) In der steigenden Phase. Entwickelt ein breiteres Bewegungsrepertoire für unterschiedliche Ballhöhen im Wettkampf.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 666,
+        "name": "Banana-Flick + Übergang",
+        "description": "B serviert kurz in die RH von A → A tritt ein und spielt RH-Banana-Flick diagonal in die RH von B → B blockt schnell in eine Ecke → Rally frei. Entscheidend: Recovery zur Neutralposition nach dem Flick. Der Rückschritt vom Tisch nach dem Flick ist das eigentliche Trainingselement.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 667,
+        "name": "Banana-Flick → RH-Topspin → VH-Abschluss (3-Schlag-Sequenz)",
+        "description": "B serviert kurz → A spielt Banana-Flick → B returniert\/blockt → A spielt RH-Topspin → B returniert → A bewegt sich in RH-Seite und spielt VH-Topspin-Abschluss. Trainiert die komplette offensive Sequenz ab Rückschlag.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 668,
+        "name": "VH-Flick oder RH-Angriff (Entscheidungsdrill)",
+        "description": "A serviert Doppelabsprung-Aufschlag → B returniert entweder KURZ in die VH von A ODER LANG in die RH von A → Kurz: A spielt VH-Flick. Lang: A spielt RH-Loop\/Drive → Punkt frei. Extreme Beinarbeit-Differenz zwischen vorwärts (Flick) und rückwärts (Topspin).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 669,
+        "name": "2-2-Drill (Timo Boll)",
+        "description": "2 konsekutive VH-Topspins (Bälle kommen in die VH), dann Wechsel zu 2 konsekutiven RH-Topspins (Bälle kommen in die RH). Wiederholung. Bolls persönliche Kerntechnikübung, die den deutschen Schwerpunkt auf ausgeglichenes Zwei-Flügel-Spiel widerspiegelt. Varianten: 2-2 mit Loop gegen Block; 2-2 mit steigendem Tempo; 2-1 oder 3-1.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 670,
+        "name": "VH-Mitte-VH-RH (4-Punkt-Beinarbeit)",
+        "description": "A spielt: VH-Topspin aus VH → B RH; VH-Topspin aus Mitte → B RH; VH-Topspin aus VH → B RH; RH-Topspin aus RH → B RH. B blockt entsprechend. Nach dem 9. Topspin Übergang zum freien Spiel.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 671,
+        "name": "RH-Mitte-Ecke-Shuffle",
+        "description": "Blocker alterniert zwischen der Mitte und der RH-Ecke von A → A greift kontinuierlich mit RH-Topspin an, nutzt kleine laterale Shuffle-Schritte zur Positionsanpassung. Variation: Blocker spielt in die gesamte RH-Hälfte (50 % des Tisches random).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 672,
+        "name": "Random RH-VH-Integration",
+        "description": "Blocker sendet Ball random in die Mitte-RH oder Mitte-VH von A → A muss entscheiden: RH-Topspin oder VH-Topspin. Start mit nur 2 Optionen, dann Erweiterung auf breitere Platzierungen + Ellbogen-Bälle.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 673,
+        "name": "RH\/VH-Topspin-Eröffnungsentscheidung",
+        "description": "A serviert kurz (beliebig) → B returniert Flip oder Schupf halblang\/lang in die RH-Seite von A (bis Mitte) → A spielt ENTWEDER RH-Topspin ODER VH-Topspin (Umsprung) in die RH von B → B blockt auf ganzen Tisch → Frei.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 674,
+        "name": "Spielnaher RH-Topspin",
+        "description": "A serviert Kurzen Aufschlag in die RH\/Mitte von B → B spielt Push\/Flip in die RH von A → A spielt RH-Topspin in Ecke → B spielt Block\/Topspin in die RH\/Mitte von A → Frei. Fortgeschritten: A serviert kurz auf ganzen Tisch; B pushes\/flippt in die RH\/Mitte von A (gelegentlich kurz in VH → frei); A spielt RH-Topspin aus RH, VH-Topspin aus Mitte → ganzer Tisch.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 675,
+        "name": "Robot\/Multiball RH-Counter-Loop",
+        "description": "Robot\/Trainer sendet mitteltempo-TS in die tiefe RH von A → A spielt: 2x RH-Counter-Topspin diagonal → Umsprung → 3x VH-Topspin diagonal (beschleunigend) → 1x VH-Power-Topspin parallel mit maximalem Tempo. Trainiert Tempovariation und Richtungswechsel beim Abschluss.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 676,
+        "name": "Überkreuzungspunkt-Angriff",
+        "description": "A serviert langen TS auf den Überkreuzungspunkt (Ellbogen) von B → B muss sich für RH oder VH entscheiden → A spielt nächsten Ball in die gegenüberliegende offene Ecke → Punkt frei. Zwingt den Gegner unter Zeitdruck zur Entscheidung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 677,
+        "name": "Weite Ecken öffnen",
+        "description": "A spielt Topspin auf den Überkreuzungspunkt von B → B bewegt sich für Block (verlässt eine Ecke) → A spielt nächsten Ball in die offengelassene weite Ecke → Punkt frei. Trainiert das Lesen der Gegnerposition.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 678,
+        "name": "Rückschlag-Platzierung nach Position lesen",
+        "description": "A serviert kurzen No-Spin-VH aus RH-Seite. B beobachtet A Position: Wenn A nah am Tisch bleibt (Pendulum-Position) → B flickt lang in RH. Wenn A sich zum Umlaufen in RH-Ecke bewegt → B flickt lang in offene VH. Wenn A in der Mitte bleibt → B flickt auf Überkreuzungspunkt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 679,
+        "name": "Anti-Chopper: Kurz-Lang-Wechsel",
+        "description": "80 % der Aufschläge kurz servieren. Abwehrspieler kommt an den Tisch → sofort schnell lang und auf die Mitte\/Körper angreifen. Wechsel: 2 schwere Topspins (Chopper zurücktreiben) → 2 kurze Drops (Chopper nach vorne zwingen). Kerntaktik: Mitte\/Ellbogen angreifen; zwischen schwerem Topspin und flachem Schlag variieren; Sidespin-Loops einsetzen.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr",
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 680,
+        "name": "Anti-Blocker-Drill",
+        "description": "Jede reguläre oder irreguläre Übung, aber ALLES auf den Überkreuzungspunkt des Partners spielen. Variieren: Tempo (schnell dann langsam), Spin (schwerer Topspin dann flacher Drive), Platzierung (Überkreuzungspunkt dann plötzlich weiter Winkel).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 681,
+        "name": "Kurzspiel-Match (Nur Schupf)",
+        "description": "Ganzer Tisch, NUR VH- oder RH-Schupf erlaubt. Ball muss kurz bleiben (Minimum 2 Absprünge auf Gegnerseite). Punkt nur möglich wenn: (a) Ball das Netz streift und drüber geht, oder (b) Ball nur einmal auf Gegnerseite abspringt. Trainiert Ballgefühl, Platzierung und Kurzspiel-Taktik.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 682,
+        "name": "Taktische Sequenz mit Verzweigung",
+        "description": "Aufschläger serviert kurzen US → Rückschläger schupft → Aufschläger eröffnet VH-Topspin aus Mitte in Gegner-RH → Gegner blockt in VH ODER RH → Wenn Block in VH: VH-Topspin parallel in RH (4. Ball), dann RH-Block → RH-Topspin diagonal (6. Ball). Wenn Block in RH: RH-Topspin (4. Ball), dann VH-Topspin aus VH (6. Ball). Komplexes 6-Ball-Muster mit konditionaler Verzweigung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 683,
+        "name": "Halbtisch-auf-Ganztisch",
+        "description": "Start mit Aufschlag + langem Schupf irgendwohin. Blocker spielt auf den GANZEN Tisch. Topspin-Spieler muss alles NUR in die RH-Hälfte des Blockers zurückspielen. Erzwingt konstante Anpassung bei Richtungswechseln des Blockers.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 684,
+        "name": "6:9-Druckdrill",
+        "description": "Ein Spieler startet bei 6 Punkten, der andere bei 9. Der Trainierende (6 Punkte) hat den 2. Aufschlag (Gegner serviert) und muss sich zurückkämpfen. Reguläres Spiel bis 11. Varianten: Defizit ändern (5:9, 7:9); Teamwettbewerb (welches Team gewinnt mehr Sätze aus dem Defizit?).",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 685,
+        "name": "Tauziehen",
+        "description": "Zahl auf 10 setzen, Start bei 5. Spieler A gewinnt Punkt → Zähler steigt auf 6. Spieler B gewinnt → Zähler fällt auf 4. A gewinnt bei 10, B bei 0. Jeder Punkt zählt gleich, konstanter mentaler Druck.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 686,
+        "name": "Deuce-Spiele",
+        "description": "Jedes Spiel bei 8:8, 9:9 oder 10:10 starten und ausspielen. Best of 5 oder 7 Deuce-Spiele. Trainiert spezifisch Knappheitssituationen. Aufschlag wechselt bei 10:10 nach jedem Punkt.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 687,
+        "name": "Aufschlag-und-Angriff-bis-7",
+        "description": "5 Aufschläge pro Spieler, Spiel bis 21. Aufschläger muss servieren, um Angriff zu verhindern. Rückschläger darf jeden Aufschlag angreifen oder kurz schupfen. Aufschläger MUSS angreifen, wenn Return über die Grundlinie geht. Aufschläger muss den Punkt vor dem 7. Ball gewinnen. Entwickelt Abschlussbereitschaft.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 688,
+        "name": "Volleyball-Regeln (Aufschlagpunkte)",
+        "description": "Altes Volleyball-Scoring: Man kann NUR punkten, wenn man SELBST aufschlägt. Gewonnener Ballwechsel gibt Aufschlagrecht, wenn man es nicht hatte. Belohnt natürlich den Spieler mit besserem Aufschlag-Aufbau.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 689,
+        "name": "Rakete (Sprint + Punkt)",
+        "description": "Zwei Teams stehen einige Meter vom Tisch entfernt. Auf Signal sprinten die ersten beiden Spieler zum Tisch. Wer zuerst ankommt, bekommt Aufschlag. EIN Punkt wird gespielt. Zurücksprinten, nächstes Paar. Teamwertung. Trainiert Leistung unter physischem Stress.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 690,
+        "name": "Kaisertisch",
+        "description": "Mehrere Tische in einer Rangliste. Sieg → einen Tisch Richtung Kaisertisch vorrücken. Niederlage → weg. Klassischer Ranglistendruck. Varianten: Handicaps (schwache Hand, nur bis 5. Ball, bestimmte Schläge geben doppelte Punkte).",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 691,
+        "name": "7er-Ablösespiel",
+        "description": "Tische spielen bis 7 (kein Einstand — 7:6 beendet). Gewinner meldet sich beim Zähler. Verlierer behält akkumulierte Punkte, bleibt am Tisch. Erster Spieler von der Wartebank übernimmt und beginnt mit Aufschlag. Möglich, sofort ein 0:6-Defizit vorzufinden.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 692,
+        "name": "Bankräuber",
+        "description": "7-8 Spieler, 3 Tische. Bankdirektor an einem Ende, Bankräuber am anderen. Mittlerer Tisch spielt Rundlauf-Stil. Bankdirektor besiegen → Münzen verdienen. Gegen Bankräuber verlieren → Münzen verlieren. Spieler mit den meisten Münzen gewinnt.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 693,
+        "name": "Stakes-Training",
+        "description": "Trainingsspiele mit realen kleinen Konsequenzen: Verlierer macht 10 Liegestütze, oder Spiel um Proteinriegel\/Kleinbeträge.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 694,
+        "name": "Doppelfehler-Kosten",
+        "description": "Spiele, bei denen jeder Fehler DOPPELT zählt (2 Punkte für den Gegner statt 1). Erhöht dramatisch die Kosten von Fehlern und erzwingt kontrolliertes, fokussiertes Spiel.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 695,
+        "name": "Cho or Lose",
+        "description": "Normales Match. Wenn man einen Punkt gewinnt und NICHT cho macht (feiert\/Faust pumpt), VERLIERT man den Punkt. Trainiert positive Körpersprache und Wettkampfenergie unter Druck.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 696,
+        "name": "Chinesischer 3-Punkt-VH-Drill (Multiball)",
+        "description": "Trainer füttert: Ball 1 → RH-Seite (Spieler spielt VH mit Umsprung); Ball 2 → Mitte (VH); Ball 3 → weite VH (VH). Wiederholung. Betont VH-Dominanz über 2\/3 des Tisches. Bis zu 30 konsekutive Bälle pro Set. Variation: Unregelmäßig (Trainer wechselt random zwischen 2-3 Positionen).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 697,
+        "name": "Counter-Topspin-Rally (CNT-Aufwärm-Klassiker)",
+        "description": "Beide Spieler stehen 3-4 Meter vom Tisch. VH-Topspin diagonal → Counter-Topspin zurück → kontinuierliche Rally mit maximalem Spin aus der Distanz. Entwickelt Koordination, Beinarbeit auf Distanz und Timing.",
+        "player_count": 2,
+        "format": "aufwaermen",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 698,
+        "name": "Schattenspielen (7-Übungen-Programm)",
+        "description": "OHNE Ball: (1) Gewichtsverlagerung um den Schwerpunkt; (2) VH-Grundbewegung mit Beinarbeit; (3) RH-Angriffsbewegung; (4) RH-VH-Transition-Pivot; (5) Weite VH mit großem Schritt; (6) 2-Punkt-Angriff mit RH-VH-Transition; (7) Vollständige Kombination. Chinesisches Prinzip: Training beginnt abseits des Tisches, korrekte Bewegungsmuster vor dem Ball.",
+        "player_count": 2,
+        "format": "aufwaermen",
+        "level": "fortgeschritten",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 699,
+        "name": "Mima Punch (Tischtnahes Counter-Drive)",
+        "description": "Partner loopt Topspin in RH → Spieler bleibt extrem tischnah, spielt kompakten RH-Counter-Drive mit frühem Timing (Ball am oder vor dem höchsten Punkt). Umleitung in die offene Ecke. Reflektiert den japanischen Trend: tischnahe Geschwindigkeit statt Kraft (Mima Ito, Harimoto).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 700,
+        "name": "Japanische Aufschlag-Variations-Drill",
+        "description": "Spieler übt Serien: (1) Kurzer US Mitte; (2) Kurzer No-Spin (als US getarnt) in RH; (3) Kurzer Sidespin in VH; (4) Halblang auf Überkreuzungspunkt. Nach JEDEM Aufschlag sofort in 3.-Ball-Angriffsposition wechseln.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 701,
+        "name": "Waldner-Stil Multi-Style-Sparring",
+        "description": "Kein festes Muster, sondern strukturierter Ansatz: Spieler muss in jeder Trainingswoche gegen verschiedene Stile üben und konkurrieren: Loopers, Angreifer, Abwehrspieler, Linkshänder. Kombiniert mit Videoanalyse kommender Gegner.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 702,
+        "name": "Differentielles Training (DTTB\/NRW, 60-Minuten-Session)",
+        "description": "Gegenseitiges Multiball-Zuspiel mit bewussten Variationen: (1) VH-TS abwechselnd Ping-Pong mit Spin und voller Topspin; (2) RH-TS gleich; (3) VH-TS auf Box hinter dem Tisch zielen, abwechselnd mit VH-TS unter Netzkantenhohe; (4) VH-TS: Schläger startet tief → vertikal hoch → Kurve nach vorne; (5) VH-TS: Schläger startet hoch → horizontal → Kurve nach oben. Es gibt keine Fehler — alle Variationen sind Teil der optimalen Lösungsfindung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 703,
+        "name": "DTTB Aufschlag-Rückschlag-Taktik-Sequenz mit Athletik",
+        "description": "(1) Sprungausfallschritte für Hüftstabilität (physische Vorbereitung); (2) Kurzer Aufschlag → Kurzer Schupf zurück → Wenn Schupf lang in VH → VH-Topspin-Eröffnung → Punkt frei; (3) Punktwertung: Aufschläger zählt aufwärts, Rückschläger zählt abwärts. Integration von Athletik mit taktischer Tischarbeit.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 704,
+        "name": "Modernes Kurzspiel-Control-Drill",
+        "description": "A füttert kurzen US → B droppt kurz oder schupft lang → Wenn kurz: A droppt kurz, flickt oder schupft lang → Wenn lang: offensiver Schlag. Punkt ist ab dem 1. Ball live. Trainiert die Pre-Rally-Phase, die bestimmt, wer den ersten Angriff bekommt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 705,
+        "name": "Banana-Flick Recovery Drill (Multiball)",
+        "description": "Spieler flickt einen kurzen Ball nahe der Tischmitte mit RH-Banana-Flick. Direkt danach füttert der Trainer random Topspins auf den ganzen Tisch. Spieler muss nach dem Flick sofort zur Neutralposition zurückspringen und die Folgebälle aggressiv kontern. Kernkompetenz: Die Recovery-Beinarbeit nach dem Flick ist das eigentliche Trainingselement — der Rückschritt vom Tisch und die sofortige Spielbereitschaft.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 706,
+        "name": "5-Ball-Topspin-Sequenz (Serve → Rally)",
+        "description": "A serviert langen Sidespin in die RH von B → B spielt RH-Topspin in die RH von A → A spielt RH-Topspin in die RH von B → B blockt in die VH von A → A spielt VH-Topspin crosscourt zum Abschluss → Punkt frei. Trainiert die komplette Transition vom Aufschlag über RH-Rallye zum VH-Abschluss. Kernprinzip: 3. Ball = Aufbau, 5. Ball = Abschluss mit Richtungswechsel.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 707,
+        "name": "Counter-Angriff nach gegnerischem Banana-Flick",
+        "description": "A serviert kurz mit variiertem Spin (US, No-Spin, Sidespin) → B flickt (banana flick oder normaler Flick) → A kontert den Flick gezielt in die offene Ecke. Kernkompetenz: Der Server plant bewusst für den aggressiven Return und kontrolliert durch Spin-Variation, WIE der Gegner flickt. Weniger Unterschnitt am Aufschlag macht den Flick für den Receiver schwieriger, weil er den Spin selbst erzeugen muss. Taktik nach Ma Long vs Fan Zhendong (WM 2017): Ma Long variierte bewusst den Aufschlag-Spin um schwächere Flicks zu provozieren.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "taktik",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 708,
+        "name": "Halblanger Aufschlag-Exploit",
+        "description": "A übt halblange Aufschläge: der Ball landet so, dass der 2. Absprung auf oder knapp hinter der Grundlinie fällt. B muss entscheiden: kurz zurücklegen (riskant, weil Ball fast lang ist) oder angreifen (riskant, weil Ball vielleicht doch kurz bleibt). A plant den 3. Ball je nach Return: Flick gegen kurzen Return, Topspin gegen langen. Kernkompetenz: Maximale Leseprobleme beim Gegner erzeugen. 100ms Entscheidungsverzögerung reichen um die Beinarbeit zu stören. Moderner Trend laut DTTB: Halblange Aufschläge sind zunehmend dominanter als kurze.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 709,
+        "name": "5th-Ball Conditional Game",
+        "description": "Normales Spiel mit Sonderregel: Wenn der Rückschläger es schafft, seinen 5. Ball (= 4. Ball im Ballwechsel) erfolgreich zurückzuspielen, gewinnt der Rückschläger den Punkt automatisch. Zwingt den Aufschläger, den Punkt VOR dem 5. Ball zu beenden — trainiert Abschlussbereitschaft und konsequenten 3.-Ball-Angriff. Der Rückschläger trainiert defensive Stabilität und Überlebensfähigkeit.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 710,
+        "name": "Flick-or-Push Conditional Game",
+        "description": "Spiel mit Entscheidungsregel: Wenn ein Spieler einen langen Push oder einen Flick spielt, MUSS der Gegner sofort angreifen. Der Spieler der den langen Push\/Flick initiiert hat, hat nur noch EINEN Ball um den Punkt zu gewinnen. Trainiert Entscheidungsqualität: Wann pushe ich lang (und riskiere Angriff)? Wann flicke ich (und muss den Counter überleben)? Erzwingt bewusstes Kurzspiel und bestraft gedankenlose lange Bälle.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 711,
+        "name": "27-Variationen-Aufschlagdrill (Solo)",
+        "description": "Solo-Aufschlagtraining: Eine Aufschlagbewegung (z.B. Pendulum) wird systematisch in 27 Varianten geübt. 3 Platzierungen (kurz VH, kurz RH, kurz Mitte) × 3 Spin-Arten (Unterschnitt, Sidespin, No-Spin) × 3 Tempi (langsam, mittel, schnell). Jede Kombination wird 5-10× geübt. Ziel: Maximale Täuschung aus einer identischen Bewegung. Der Gegner soll aus der Armbewegung nicht ablesen können, welcher Spin und welche Platzierung kommt.",
+        "player_count": 2,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 712,
+        "name": "Solo-Target-Aufschlagdrill (10er-Serie)",
+        "description": "Solo-Aufschlagübung unter Druck: Ein gefaltetes Blatt Papier wird als Ziel auf den Tisch gelegt. Der Spieler muss 10 konsekutive Aufschläge auf das Papier treffen. Bei jedem Fehler: zurück auf Null. Je näher man an 10 kommt, desto größer wird der mentale Druck — genau wie im Wettkampf bei 9:9. Variation: Ziel in verschiedene Positionen legen (kurz VH, kurz RH, kurz Mitte). 10 Minuten pro Training reichen.",
+        "player_count": 2,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 713,
+        "name": "Lazy Falkenberg (Ballauswahl-Variante)",
+        "description": "Spieler spielt RH-Topspin aus der RH-Ecke, bis er sich entscheidet umzuspringen. Erst wenn der Spieler den Pivot-Vorhand spielt, sendet der Zuspieler den nächsten Ball in die weite VH-Ecke. Der Spieler bestimmt also selbst, wann der Falkenberg-Zyklus beginnt. Trainiert Ballauswahl und Timing: Wann ist der richtige Moment zum Umspringen? Nicht jeder Ball eignet sich — der Spieler lernt, den optimalen Ball für den Pivot abzuwarten.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 714,
+        "name": "Topspin-Block-Rollentausch",
+        "description": "A loopt 2x VH-Topspin diagonal, B blockt. Dann Rollenwechsel: B loopt 2x VH-Topspin, A blockt. Durchgehende Wiederholung ohne Unterbrechung. Laut Samson Dubina das \"huge missing link for many players\" — die Fähigkeit, nahtlos zwischen Angriff und Verteidigung zu wechseln. Steigerung: 3x Topspin statt 2x; unregelmäßiger Wechsel (Partner entscheidet spontan wann er loopt).",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 715,
+        "name": "In-Out Serve-Flip-Topspin",
+        "description": "A serviert kurz → B schupft kurz in die RH von A → A tritt ein und spielt RH-Flip → B loopt in die RH von A → A tritt zurück und spielt RH-Topspin → Punkt frei. Trainiert die häufigste In-Out-Situation im modernen TT: Ausfallschritt nach vorne für den kurzen Ball, sofortige Rückkehr für den folgenden Topspin. Kernbewegung: rechter Fuss führt sowohl vorwärts als auch rückwärts.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 716,
+        "name": "Paul-Drinkhall 4-Ball-Muster",
+        "description": "RH-Topspin aus der RH-Ecke → VH-Topspin aus der Tischmitte → RH-Topspin aus der RH-Ecke → VH-Topspin aus der weiten VH-Ecke → Wiederholung. Zuspieler blockt alle Bälle. Kombiniert kurze Seitwärtsbewegungen (RH-Ecke ↔ Mitte) mit weiten (Mitte → weite VH). Trainiert besonders den schwierigen Ball in die Tischmitte, wo die Entscheidung RH oder VH fallen muss.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 717,
+        "name": "Short-Long-In-Out für Abwehrspieler",
+        "description": "A serviert kurz → B schupft kurz → A tritt ein und pusht kurz → B loopt → A tritt schnell aus auf 2-3m Distanz und spielt Unterschnitt (Chop) → B loopt erneut → A schneidet. Der fundamentalste Drill für Abwehrspieler: trainiert den ständigen Wechsel zwischen Tischnähe (Push, Flip) und Distanz (Chop). Der Rückzug nach dem Push ist der kritische Moment — Quick-Jump-Footwork rückwärts, rechter Fuss führt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr",
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 718,
+        "name": "Push-Chop-Counter Sequenz (Abwehr-Zyklus)",
+        "description": "A pusht kurz → B loopt → A tritt zurück und schneidet 2-3 Bälle aus der Distanz → bei hohem\/schwachem Ball tritt A explosiv vor und spielt VH-Counter-Topspin als Überraschungsangriff. Bildet den kompletten Abwehr-Zyklus ab: Kurzspiel → Rückzug → Schnittdefense → Counter-Attack-Transition. Referenz: Joo Se Hyuk, dessen Vorhand-Konter aus der Verteidigung so gut waren wie die von reinen Angriffsspielern.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr",
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 719,
+        "name": "Schnelligkeits-Quadrat (Athletik)",
+        "description": "3m vorwärts sprinten + 3m rückwärts + 3m Sidesteps rechts + 3m Sidesteps links — alles mit 100% Intensität. Dann vollständige Erholung (ca. 60 Sekunden). 6-10 Wiederholungen. MUSS im ermüdungsfreien Zustand durchgeführt werden — direkt nach dem Aufwärmen, VOR dem Einspielen am Tisch. Schnelligkeit entwickelt sich nur an der absoluten Leistungsgrenze. Optimale Belastungsdauer: 3-5 Sekunden pro Durchgang.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 720,
+        "name": "Matchball-Simulation (10:9) mit Zuschauern",
+        "description": "Spielstand wird auf 10:9 gesetzt. Ein Spieler steht am Matchball, der andere muss abwehren. Gewinnt der Verteidiger, geht es in die Verlängerung ab 10:10. Nach jedem Durchgang wird gewechselt, wer den Matchball hat. Erfolgsquoten protokollieren. Entscheidend für die Drucksteigerung: Trainingspartner als Publikum hinzuziehen. Wenn andere Spieler zuschauen, steigt der externe Druck signifikant und nähert sich der Turnieratmosphäre. 10-20 Durchgänge pro Session.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 721,
+        "name": "Gleitendes Handicap-System",
+        "description": "Für Spieler unterschiedlichen Niveaus: Der schwächere Spieler startet mit Vorsprung (z.B. 5:0). Nach jedem Spiel wird die Vorgabe automatisch angepasst: Gewinnt der Schwächere trotz Vorgabe, sinkt sie um 1. Verliert er, steigt sie um 1. So pendeln sich die Spiele automatisch auf ein kompetitives Niveau ein. Der Stärkere trainiert das Aufholen unter Druck, der Schwächere das Verteidigen einer Führung. Funktioniert auch im Team-Format.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 722,
+        "name": "King of the Table (Jokerspiel)",
+        "description": "Eine Tischseite ist die Königsseite. Nur wer dort steht, kann Punkte sammeln. Der Herausforderer muss den König besiegen, um selbst auf die Königsseite zu wechseln — gewinnt aber erst dann Punkte. Verliert der Herausforderer, stellt er sich bei einem beliebigen Tisch wieder an. Als König steht man permanent unter Druck, die Position zu verteidigen, während Herausforderer die Chance auf den nächsten Punkt erst erkämpfen müssen. Für 4+ Spieler.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 723,
+        "name": "Forderungsrangliste (Ladder Board)",
+        "description": "Langfristiges Druckformat über Wochen: Alle Spieler werden auf einer sichtbaren Tafel nach Spielstärke eingeordnet. Jeder kann Spieler herausfordern, die bis zu 2-3 Positionen über ihm stehen. Gewinnt der Herausforderer, tauschen beide die Plätze. Am Stichtag gewinnt der Spieler an der Spitze. Die ständige Möglichkeit, herausgefordert zu werden, hält den Druck dauerhaft aufrecht. Funktioniert als Motivationsinstrument über eine ganze Saison.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 724,
+        "name": "Box-Liga mit Auf- und Abstieg",
+        "description": "Mehrere Gruppen mit je 4 Spielern spielen parallel Jeder-gegen-Jeden (Best of 3 oder 5). Der Letzte der oberen Liga steigt ab, der Erste der unteren Liga steigt auf. Über mehrere Wochen gespielt, entsteht ein System mit echten Konsequenzen, das der Punktspielatmosphäre sehr nahekommt. Ideal für Vereine mit 12+ Spielern. Erzeugt dauerhaften Wettbewerbsdruck mit sichtbarer Hierarchie.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 725,
+        "name": "Drei-Punkte-Kampf (DTTB Team-Format)",
+        "description": "Zwei Mannschaften treten an. Team A startet mit 3 Punkten, Team B mit 0. Punktet ein Spieler von Team A, erhält Team A +1. Punktet Team B, verliert Team A -1. Team A verteidigt, Team B greift an. Der psychologische Druck ist auf beiden Seiten unterschiedlich aber gleichermaßen intensiv: Team A hat Angst vor dem Verlust, Team B muss aggressiv aufholen. Nach einem Durchgang Rollenwechsel.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 726,
+        "name": "Bolls 10-Sekunden-Routine (Mentaltechnik)",
+        "description": "Zwischen jedem Punkt ein 4-Stufen-Protokoll in 10 Sekunden durchlaufen: (1) Grundposition einnehmen, Ball aufnehmen. (2) Technische Entscheidung: welcher Aufschlag\/Rückschlag? (3) Taktischen Plan bestätigen (z.B. \"Vorhand-Angriff, das ist stärker als meine Rückhand\"). (4) Mentaler Selbstgesprächs-Impuls zur Fokussierung. Als Übung: In Deuce-Spielen oder Matchball-Simulationen bewusst diese Routine zwischen JEDEM Punkt einhalten. Boll: \"Nutze die Zeit zwischen den Punkten, um in eine Basis zurückzukehren, in der du dich wirklich wohl fühlst.\"",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 727,
+        "name": "Push-to-Attack Transition (Multiball)",
+        "description": "Coach wechselt zwischen Unterschnitt- und Topspin-Feeds in die gleiche Position. Bei US: Spieler eröffnet mit Loop (Schläger offen, Bewegung nach oben). Bei TS: Spieler spielt Counter-Topspin (Schläger geschlossener, mehr nach vorne). Durchgehende Wiederholung ohne Pause. Trainiert die zwei häufigsten Schlagübergänge im Spiel in einem einzigen Drill. Steigerung: Position variieren (mal RH, mal VH), dann random US\/TS.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 728,
+        "name": "Semi-Random 1-or-2 Drill",
+        "description": "Coach füttert 1 oder 2 Bälle auf die RH-Seite, dann 1 oder 2 auf die VH-Seite. Der Spieler weiss nicht, ob 1 oder 2 Bälle kommen — er muss den Feeder beobachten und reagieren. Entscheidender Unterschied zu regulärem 1-1: Der Spieler kann sich nicht auf den Seitenwechsel vorbereiten, muss den visuellen Cue des Feeders lesen. Erste Stufe der Randomisierung. Steigerung: 1-3 Bälle pro Seite, dann komplett random.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 729,
+        "name": "Gegenseitiges Multiball-Zuspiel (Chinesische Methode)",
+        "description": "Zwei Spieler füttern sich abwechselnd aus dem Balleimer. Spieler A füttert 50 Bälle an B (z.B. VH-Topspin-Drill), dann Rollenwechsel. Der Coach supervisiert beide und gibt Feedback. Standard-Methode der chinesischen Nationalmannschaft — erhöht die Trainingsproduktivität dramatisch, weil nicht nur ein Coach füttern kann. Voraussetzung: Beide Spieler müssen präzise füttern können. Fütterqualität ist eine eigene Fähigkeit die trainiert werden muss.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 730,
+        "name": "HIIT-Multiball (Konditions-Intervall)",
+        "description": "30 Sekunden All-out bei 80 Bällen\/Minute, dann 30 Sekunden Pause (1:1 Work-Rest-Ratio). 5 Sets pro Gruppe, 3 Gruppen mit verschiedenen Übungen (z.B. Gruppe 1: VH-Topspin, Gruppe 2: RH-Topspin, Gruppe 3: Falkenberg). Wissenschaftlich nachgewiesen: +1.82 ml\/min\/kg VO2max-Verbesserung nach 10 Wochen (Katsikadelis et al., 2017). Wichtig: Ermüdungsmanagement beachten — Frauen zeigen Balanceabbau nach ca. 16 Min, Männer nach ca. 32 Min (Gu et al., 2019).",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "leistung",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 731,
+        "name": "Augen-zu Multiball (Platzierungstraining)",
+        "description": "Spieler schliesst die Augen nach dem Ballkontakt und konzentriert sich ausschliesslich auf das Körpergefühl beim Schlag. Ziel: Platzierungsgenauigkeit durch propriozeptives Feedback statt visueller Kontrolle verbessern. Variante: mit leicht gewichteten Bällen für verstärktes kinästhetisches Feedback. Chinesische Studie (n=48, 2020) zeigte signifikante Verbesserung der Eck-Platzierungsgenauigkeit (p<0.001) gegenüber konventionellem Multiball, besonders bei Unterschnitt-Schlägen.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 732,
+        "name": "Schnitt diagonal\/gerade Wechsel",
+        "description": "Angreifer spielt Topspin auf eine feste Position. Abwehrspieler wechselt bei jedem Ball die Richtung: erst diagonal, dann gerade, dann diagonal. Trainiert die Umstellung der Koerperausrichtung und Schlaegerhaltung unter Druck. Die gerade Variante ist schwieriger, weil die natuerliche Winkeloeffnung fehlt und die Fehlertoleranz geringer ist.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 733,
+        "name": "Vor-Zurueck-Drill Abwehr (Multiball)",
+        "description": "Trainer wechselt zwischen kurzem Schupf ans Netz und tiefem Topspin. Abwehrspieler muss nach vorne fuer kurzen Touch, dann 1.5m+ zurueck fuer Schnittabwehr. Die DTTB beschreibt dies als das schnelle Vor- und Zuruecklaufen innerhalb der Ballwechsel - eine der wichtigsten Uebungen ueberhaupt fuer Abwehrspieler. 8 Serien x 8-10 Baelle, 30-60 Sek Pause.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 734,
+        "name": "70\/30-Uebung (Adomeit)",
+        "description": "Angreifer topspint, Abwehrspieler schnittet tief. Angreifer schupft lang. Abwehrspieler hat die Wahl: zurueckschupfen ODER mit Topspin angreifen. Bei erneutem Topspin des Angreifers wieder schneiden. Ziel: 70% Abwehr, 30% Angriff innerhalb eines Ballwechsels. Trainiert die wichtigste taktische Entscheidung des modernen Abwehrspielers: Wann verteidigen, wann zuschlagen?",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 735,
+        "name": "Schnitt-Schnitt-Angriff (strukturiert)",
+        "description": "Angreifer topspint fortlaufend, Abwehrspieler schnittet. Nach 3-4 Schnittrrueckgaben, sobald ein Ball hoeher oder kuerzer kommt, MUSS der Abwehrspieler mit VH-Topspin oder -Drive angreifen. Variante: Trainer ruft jetzt! als Angriffssignal, oder Abwehrspieler entscheidet selbst. Trainiert das taktische Auge fuer schwache Baelle und den Mut zum Umschalten.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 736,
+        "name": "Balleimer Schnitt-Schnitt-ANGRIFF",
+        "description": "Trainer fuettert 3 schnelle Topspin-Baelle (Abwehrspieler muss schneiden), dann 1 hohen\/weichen Ball (Abwehrspieler muss angreifen). Wiederholung im Rhythmus 3:1. Fortgeschritten: Trainer variiert zufaellig ob der weiche Ball nach 2, 3 oder 4 schnellen Baellen kommt. Trainiert den Uebergang Abwehr zu Angriff unter Zeitdruck.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 737,
+        "name": "Schnittwechsel schwer\/leer (Grunduebung)",
+        "description": "Angreifer topspint fortlaufend. Abwehrspieler wechselt ab: ein Ball mit extremem Unterschnitt, ein Ball nahezu rotationslos (Float) - mit moeglichst identischer Armbewegung. Technik-Unterschied: Bei Schnitt beschleunigt das Handgelenk AM Treffpunkt (tangentialer, buerstender Kontakt). Beim Leerball beschleunigt das Handgelenk VOR oder NACH dem Treffpunkt (zentralerer Kontakt). Die entscheidende Punktgewinnmethode fuer Abwehrspieler.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 738,
+        "name": "Schnittwechsel + Platzierungswechsel",
+        "description": "Wie Schnittwechsel-Grunduebung, aber mit Richtungswechsel: schwerer Schnitt diagonal weit in eine Ecke, Leerball gerade in die andere Ecke. Adomeit betont: Beim taktischen Einsatz des Schnittwechsels ist es immer wichtig, eigene Platzierungen zu wechseln, um den Angriffsspieler zur Bewegung zu zwingen. Aus der Bewegung passieren deutlich mehr Fehler auf Schnittwechsel.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 739,
+        "name": "Handtuch-Drill (Tiefe Platzierung)",
+        "description": "Ein Handtuch quer ueber den Tisch legen, sodass nur die hintersten 30cm frei bleiben. Optional: Seil ca. 10cm ueber dem Netz spannen. Jeder Schnittball muss in der unbedeckten Zone landen UND unter dem Seil fliegen. Trainiert die zwei wichtigsten Elemente der Schnittqualitaet: Tiefe und niedriges Netzueberqueren. Einfaches Setup, enormer Trainingseffekt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 740,
+        "name": "Tief-Tief-Kurz-Tief Rhythmusbruch",
+        "description": "Tiefer Schnitt auf RH (Gegner bleibt hinten) -> Tiefer Schnitt auf VH (Gegner bleibt hinten) -> Kurzer Stoppball ans Netz (Gegner muss nach vorne sprinten) -> Tiefer, schneller Push oder Topspin in die offene Ecke. Dieses Rhythmusbruch-Muster nutzt die Vor-Zurueck-Schwaeche der Angreifer maximal aus. Der Stoppball nach 2 tiefen Schnitten ist extrem schwer zu lesen.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 741,
+        "name": "Lob-to-Counter-Attack",
+        "description": "Ein Spieler schmettert, der andere lobt. Sobald der Schmetterer einen schwaechen oder langsameren Ball spielt, MUSS der Lobber nach vorne sprinten und mit Topspin oder Counter-Drive kontern. Strukturiert: 3-5 Lobs, dann bei Signal oder schwachem Return sofort angreifen. Entscheidend: auf den Zehenspitzen in Bereitschaftsposition bleiben und nicht zu weit vom Tisch abdriften.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 742,
+        "name": "Dreipunkt-Dreieck (Abwehr-Beinarbeit)",
+        "description": "Punkt 1: VH-Schnitt in der Distanz. Punkt 2: RH-Schnitt weit links in der Distanz. Punkt 3: Shuffle nach vorne zum Tisch fuer kurzen Push oder Angriffs-Topspin. Zurueck zu Punkt 1. Die drei Kernbewegungen des Abwehrspielers in einem Drill: laterale Distanzbewegung, Vor-Zurueck-Transition und tischnahe Technik.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr",
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 743,
+        "name": "Abwehr-Falkenberg",
+        "description": "Anpassung des klassischen Falkenberg-Drills fuer Abwehrspieler: Ball 1 = RH-Schnitt in der Distanz. Ball 2 = Umspringen und VH-Schnitt aus der RH-Ecke. Ball 3 = Sprint nach vorne fuer VH-Topspin am Tisch (weite VH). Erholung zur RH-Distanzposition. Kombiniert laterale Distanzabdeckung mit der Angriffs-Transition - die komplette Bewegungswelt des Abwehrspielers in einem Drill.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "fortgeschritten",
+        "content": [
+            "abwehr",
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 744,
+        "name": "Rate-den-Schnitt Spiel",
+        "description": "Der Abwehrspieler schnittet, der Angreifer ruft VOR dem Spielen des Balls schwer oder leer. Wenn der Angreifer falsch raet, bekommt der Abwehrspieler einen Punkt. Gamifiziert das Taeuschungstraining und macht es messbar. Gibt dem Abwehrspieler direktes Feedback, wie gut seine Taeuschung funktioniert. Motivierender als reines Techniktraining.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "abwehr"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 745,
+        "name": "Tischtennis-Scrabble (Team-Wettkampf)",
+        "description": "Zwei Teams spielen gegeneinander an einem Tisch. Jede Paarung bekommt eine Aufgabe (z.B. 10 fehlerfreie RH-Konter diagonal). Sobald die Aufgabe gelöst ist, darf das Paar einen Scrabble-Buchstaben aus einem Beutel ziehen. Nach einer vorgegebenen Zeit treffen sich die Teams und bilden Wörter aus ihren Buchstaben. Die Mannschaft mit der höheren Punktzahl (Scrabble-Wertung) gewinnt. Verbindet technische Aufgaben mit Teamwettbewerb und Spass.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 746,
+        "name": "Verdopplung (Serien-Belohnung)",
+        "description": "Normales Spiel, aber aufeinanderfolgende Ballwechselgewinne werden belohnt: der 1. gewonnene Punkt in Serie zählt 1, der 2. in Folge zählt 2, der 3. zählt 3 usw. Sobald der Gegner einen Punkt macht, startet die Serie von vorne bei 1. Drei gewonnene Ballwechsel in Serie geben also 1+2+3 = 6 Punkte statt 3. Belohnt Konstanz und Serien, bestraft Konzentrationsschwächen. Erzeugt Druck bei langen Serien — jeder weitere Punkt ist mehr wert.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 747,
+        "name": "Speichermethode (Risiko-Management)",
+        "description": "In jeder Übung können nur die aktiven Spieler Punkte erzielen. Nach jedem gewonnenen Punkt entscheidet der Spieler: Punkte \"speichern\" (sicher, aber Rollenwechsel — Partner übernimmt) oder weiterspielen und mehr Punkte sammeln. Bei jedem Fehler: Rollenwechsel UND alle nicht gespeicherten Punkte gehen verloren. Trainiert strategische Risikoabschätzung: Wann speichere ich, wann riskiere ich? Direkte Parallele zum Wettkampf.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 748,
+        "name": "Hütchenschiessen (Zielgenauigkeit im Spiel)",
+        "description": "Normales Tischtennisspiel nach offiziellen Regeln. Auf beiden Tischseiten stehen grosse Hütchen oder Pylonen an den Rändern. Trifft ein Spieler während des Ballwechsels ein Hütchen des Gegners, gibt es einen Bonuspunkt. Fördert gezieltes Platzieren auch unter Wettkampfdruck. Die Hütchen können auch durch andere Gegenstände (Plättchen, Becher) ersetzt werden. Variation: Hütchen nur auf einer Seite für den schwächeren Spieler als Handicap.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 749,
+        "name": "Teamball-Eimer (Gruppen-Multiball-Wettkampf)",
+        "description": "Teams von 3-4 Spielern an einem Tisch. Rollen: Zuspieler am Balleimer, Rückschläger auf der anderen Seite, Ballsammler hinter dem Rückschläger, Schiedsrichter zählt erfolgreiche Bälle. Die Übenden spielen eine vorgegebene Schlagtechnik diagonal zurück. Der Ballsammler fängt die Bälle mit einem Behälter. Nach einer festen Zeit oder Ballanzahl wird gewechselt. Das Team mit den meisten erfolgreichen Bällen gewinnt. Macht Balleimertraining zum Gruppenwettkampf.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 750,
+        "name": "Becher-Abschuss (Langer Aufschlag Solo)",
+        "description": "2-3 Plastikbecher am Ende der gegnerischen Tischhälfte aufstellen — einen in jeder Ecke, einen in der Mitte. Aus normaler Aufschlagposition lange, schnelle Aufschläge spielen mit dem Ziel, die Becher vom Tisch zu stossen. Nach jedem Aufschlag zurück in die Bereitschaftsstellung. In 10 Aufschlägen zählen wie viele Becher getroffen werden. Steigerung: kleinere Ziele (Flaschendeckel), Seitschnitt zum langen Aufschlag hinzufügen sodass der Ball seitlich in den Becher kurvt. Der lange Aufschlag wirkt am besten bei ca. 20% der Aufschläge — dann aber absolut präzise.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 751,
+        "name": "Handtuch-Drill für halblange Aufschläge (Solo)",
+        "description": "Ein Handtuch oder Springseil quer über die gegnerische Tischhälfte legen, ca. 15cm vor der Grundlinie. Ziel: der 2. Aufsprung landet im schmalen Spalt zwischen Handtuch und Grundlinie — oder exakt an der Tischkante. 20 Aufschläge in Serie, Treffer zählen. Steigerung: Handtuch näher an die Grundlinie schieben. Spinvariation bei gleicher Länge: halblang mit US, dann Seitschnitt-US, dann No-Spin. Nach jedem halblangen Aufschlag Schattenschlag der VH-Topspin aus Pivot-Position. Der halblange Aufschlag ist der Hauptaufschlag chinesischer Weltklassespieler — der 2. Aufsprung an der Tischkante erzeugt maximale Leseprobleme.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 752,
+        "name": "Spin-Rotationszyklus: 5 Spins, 1 Bewegung (Solo)",
+        "description": "Eine Aufschlagbewegung wählen (z.B. Pendulum) und eine Zielzone markieren. In 5 Blöcken à 10 Aufschlägen systematisch alle Rotationsarten durcharbeiten: (1) Reiner Unterschnitt — Ball unter dem Äquator bürsten. (2) Seitschnitt-Unterschnitt — seitlich-unten bürsten. (3) Reiner Seitschnitt — am Äquator bürsten. (4) Seitschnitt-Topspin — seitlich-oben bürsten. (5) No-Spin — gleiche Bewegung aber Kontakt nahe am Griff. Bodentest: Ball in den Teppich aufschlagen und Spinreaktion beobachten. Dann den gesamten Zyklus mit Reverse-Pendulum wiederholen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 753,
+        "name": "Ghost-Serve nach Ma Lin (Solo)",
+        "description": "Griff lockern, Daumen höher auf den Belag, Ellbogen eng am Körper. Ball mindestens 16cm hochwerfen und beim Fallen auf Bauchhöhe kontaktieren. Am tiefsten komfortablen Punkt (Netzhöhe) die Unterseite des Balls mit einer extrem feinen, schnellen Bürstbewegung per Handgelenkschnapp kontaktieren. Erster Aufsprung nahe am Netz auf eigener Seite. Ziel: Ball springt 3-4 Mal auf der gegnerischen Seite auf und rollt Richtung Netz zurück — der Ghost-Effekt. 20 Aufschläge, Treffer mit mindestens 3 Aufsprüngen zählen. Entwickelt maximale Unterschnittqualität und Ballgefühl — das Fundament aller effektiven kurzen Aufschläge.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 754,
+        "name": "Täuschungspaare: Gleiche Bewegung, unterschiedlicher Effekt (Solo)",
+        "description": "Drei Täuschungspaare üben. Paar 1 (wichtigstes): Schwerer US vs No-Spin. Exakt dieselbe Bewegung und Handgelenkgeschwindigkeit, aber US = Kontakt an der Schlägerspitze (schnellster Punkt, fein bürsten), No-Spin = Kontakt nahe am Griff (langsamster Punkt, flach durchschlagen). Beim Kontakt mit dem Fuss aufstampfen um den Klangunterschied zu überdecken. Paar 2: US vs Topspin aus halbkreisförmiger Bewegung — Kontakt im Abschwung = US, im Aufschwung = TS. Paar 3: Seitschnitt vs Seitschnitt-US — Kontakt am Äquator vs unter dem Äquator. Mit Handy filmen und prüfen ob die Aufschläge identisch aussehen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 755,
+        "name": "Niedrige Netzüberquerung: Höhenkontroll-Drill (Solo)",
+        "description": "Eine dünne Stange, Schnur oder Lineal ca. 2-3cm über dem Netz befestigen. Alle Aufschläge müssen zwischen Netz und Barriere hindurchfliegen. Jeder Aufschlag der die Barriere berührt wäre im Match angreifbar. 20 Aufschläge jeder Art: kurzer US, halblanger US, Pendulum-Seitschnitt, No-Spin-Fake. Technischer Schlüssel: Ball so tief wie möglich kontaktieren — auf Netzhöhe. Barriere schrittweise senken: von 3cm auf 2cm, dann 1cm. Erfolgsquote von 80%+ anstreben. Die Kontrolle der Aufschlaghöhe ist mindestens genauso wichtig wie der Spin.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 756,
+        "name": "Reverse Pendulum → VH longline (Zhang-Jike-Muster)",
+        "description": "Aufschläger serviert Reverse Pendulum (Seitschnitt von links nach rechts) auf die VH-Seite des Partners. Der Seitschnitt lenkt die Rückgabe natürlich zur VH des Aufschlägers. Partner blockt oder schupft zurück. Aufschläger spielt VH-Topspin longline auf die RH-Ecke des Partners. Punkt frei ausspielen. Zhang-Jike-Variante: Reverse Pendulum halblang auf die Mitte, wenn Gegner schupft → RH-Flip als 3. Ball. Der Reverse Pendulum ist einer der effektivsten Aufschläge für den VH-Angriff weil der Seitschnitt die Rückgabe vorhersagbar auf die eigene VH-Seite lenkt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 757,
+        "name": "No-Spin-Täuschung → 3.-Ball-Kill",
+        "description": "Aufschläger serviert No-Spin mit exakt gleicher Bewegung wie schwerer Pendulum-US. Partner retourniert natürlich — wenn er den Aufschlag als US liest und schupft (Schläger öffnet), springt der Ball hoch weil kein US den geöffneten Winkel kompensiert. Bei hochspringendem Ball: aggressiver Schmetterball oder schneller VH-Drive. In Sequenz spielen: 3 schwere US-Pendulum, beim 4. auf No-Spin wechseln — baut US-Erwartung auf und bricht sie dann. Zufällige Mischung: US, Seitschnitt und No-Spin. Aufschläger plant 3. Ball basierend auf gewähltem Aufschlag.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 758,
+        "name": "Chinesische Muster-Wiederholung: 50× dasselbe Muster",
+        "description": "Ein taktisches Muster wird 50 Mal identisch wiederholt. Muster A (VH-dominant): Kurzer Pendulum-Seitschnitt-US auf RH-Ecke → Partner schupft lang auf RH → Aufschläger umläuft und spielt VH-Topspin auf RH-Ecke → Partner blockt auf weite VH → VH-Topspin als 5. Ball. Muster B (RH-dominant): Reverse Pendulum auf RH → Partner blockt zur Mitte → schneller RH-Flip als 3. Ball. Muster C (5. Ball): Kurz auf Mitte → Partner schupft → Aufschläger schupft lang auf RH (taktisch, kein Angriff) → Partner loopt → aggressiver Konter als 5. Ball. Kern der chinesischen Methodik: dasselbe Muster 10.000 Mal für Vertrauen und Automatisierung.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 759,
+        "name": "Aufschlag-Leiter mit eskalierenden Konsequenzen",
+        "description": "6 Zielzonen auf dem Tisch markieren. Jeder Zone ein Aufschlagtyp zugeordnet: RH kurz = US, VH kurz = Seitschnitt-Pendulum, Mitte kurz = No-Spin-Fake, RH lang = schneller langer Aufschlag, VH lang = Reverse Pendulum lang, Ellbogen halblang = halblanger Seitschnitt. Start bei Zone 1: 3 Treffer nötig zum Aufstieg. Eskalierende Strafe: Zone 1 = kein Strafpunkt bei Fehler, Zone 2 = 1 Strafpunkt, Zone 3 = 2 usw. bis Zone 6 = 5 Strafpunkte pro Fehler. Alle 6 Zonen absolvieren, unter 10 Strafpunkte bleiben. Jeder Strafpunkt = 1 Liegestütz. Trainiert alle Aufschlagtypen unter steigendem Druck.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 760,
+        "name": "Aufschlag-König (Gruppenformat)",
+        "description": "3-6 Spieler, ein Tisch, Warteschlange. Spieler A schlägt auf Spieler B auf. Wenn A ein Ass macht (B kann nicht retournieren), bleibt A als König und bekommt 1 Punkt. Wenn B retourniert, geht A ans Ende der Schlange, B wird Aufschläger. Erster mit 7 Punkten gewinnt. Aufschlagvorgaben pro Runde: Runde 1 nur kurze US, Runde 2 nur Pendulum-Seitschnitt, Runde 3 nur Reverse Pendulum, Runde 4 freie Wahl aber Pflicht zwischen 2 verschiedenen Typen abzuwechseln. Letzter jeder Runde macht Strafrunde. Variante 3.-Ball-König: nach Rückschlag wird bis zum 3. Ball weitergespielt.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 761,
+        "name": "Ziel-Knockout-Turnier (Solo-Wettkampf)",
+        "description": "8 Ziele (Plastikbecher, halbe Bälle) in verschiedenen Positionen auf der gegnerischen Hälfte: 2 nahe am Netz (RH+VH) für kurze Aufschläge, 2 an der Grundlinie für lange, 2 halblang, 2 im Ellbogenbereich. Timer starten. Alle 8 Ziele mit Aufschlägen vom Tisch schlagen. Pflicht: mindestens 4 verschiedene Aufschlagtypen. Vorgeschriebene Zuordnungen je Zielposition. Zeit stoppen. Bei mehreren Spielern: Langsamster macht Strafrunde. Druck-Eskalator: bei jedem Fehlschuss 5 Sekunden zur Gesamtzeit. Trainiert präzise Platzierung über alle Aufschlagtypen unter Zeitdruck.",
+        "player_count": 1,
+        "format": "spielform",
+        "level": "fortgeschritten",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 762,
+        "name": "Kreiseln mit Stange (Doppel RH-RH Grundrotation)",
+        "description": "Balleimer-Training. Stange oder Hütchen ca. 1.5m hinter der Tischmitte. Zuspieler spielt US in die Tischmitte. Spieler A steht vorne, spielt Topspin cross, bewegt sich sofort nach rechts hinten, läuft hinter der Stange vorbei nach links hinten (Kreisbewegung gegen den Uhrzeigersinn). Spieler B kommt von links hinten nach vorne, spielt Topspin, weicht nach rechts hinten aus. Zyklus wiederholt sich. 8 Serien à 8-10 Bälle. Die Stange zwingt beide Spieler den korrekten Bogen zu laufen statt einfach seitwärts auszuweichen.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 763,
+        "name": "V-förmige Bewegung (Doppel RH-LH Grundrotation)",
+        "description": "Balleimer-Training. Rechtshänder (A) steht links, Linkshänder (B) steht rechts. Zuspieler spielt Ball in VH oder Mitte. Spieler A tritt von links diagonal an den Tisch, spielt VH-Topspin, weicht diagonal nach links hinten zurück. Spieler B tritt von rechts diagonal an den Tisch, spielt VH-Topspin, weicht nach rechts hinten zurück. Beide bewegen sich wie ein V — jeder auf seiner Seite rein und raus. Das natürliche Bewegungsmuster für RH-LH-Paare. Ma Long\/Xu Xin nutzten exakt dieses System für 8 World-Tour-Doppeltitel.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 764,
+        "name": "Rotation unter Druck — Multiball Temposteigerung (Doppel)",
+        "description": "Zuspieler variiert Platzierung systematisch: weite VH → Mitte → weite RH → Mitte. Beide Doppelpartner rotieren und schlagen abwechselnd. Tempo des Zuspielers wird alle 2 Minuten gesteigert, bis die Rotation zusammenbricht. Identifiziert die Tempogrenze des Paares. Zeigt ab welchem Tempo das Paar auf RH-Schläge ausweichen muss statt VH-Rotation zu erzwingen.",
+        "player_count": 3,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 765,
+        "name": "2-gegen-1 Rotationstraining (Doppel)",
+        "description": "Doppelpaar (A+B) spielt nach Doppelregeln (abwechselnd schlagen) gegen einen einzelnen starken Spieler (X) der frei spielen darf. X platziert gezielt in Ecken, auf Lücken, auf den Körper um die Rotation zu stören. Das Paar lernt unter realistischem Druck zu rotieren und Kollisionen zu vermeiden. Sets bis 11, 4-6 Sets. Besonders effektiv zur Vorbereitung auf Gegner die die Rotation des Paares bewusst attackieren.",
+        "player_count": 3,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "beinarbeit"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 766,
+        "name": "Aufschlag kurz Mitte + Partner-Angriff (Doppel 3rd Ball)",
+        "description": "Spieler A: kurzer US-Aufschlag in die Tischmitte (nahe Mittellinie), weicht sofort nach rechts aus. Gegner X: Rückschlag (Schupf lang in RH oder Flip in Mitte). Spieler B: kommt von links hinten an den Tisch, spielt VH-Topspin cross in die weite VH oder auf den Ellbogen des Gegners. Punkt frei ausspielen. Kernübung des Doppels — der Aufschlag bereitet den 3. Ball des Partners vor. Kurzer Aufschlag in die Mitte limitiert die Winkel des Rückschlägers.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 767,
+        "name": "6-Ball-Rahmenübung (Doppel 3-Phasen-Drill)",
+        "description": "4 Spieler, reguläres Doppel. Die ersten 6 Bälle sind festgelegt: 1. Aufschläger A: kurz in Mitte. 2. Rückschläger X: kurz in Mitte. 3. Partner B: Schupf lang in RH. 4. Partner Y: RH- oder VH-Topspin diagonal. 5. Aufschläger A: Block parallel in VH. 6. Rückschläger X: VH-Topspin überall. Ab Ball 7: frei ausspielen. Bildet den typischen Spielverlauf im Doppel ab: Phase 1 (Ball 1-2) Kontrolle, Phase 2 (Ball 3-4) Eröffnung, Phase 3 (Ball 5-6) Beendigung.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 768,
+        "name": "Weiter-Winkel-Return-Drill (Doppel)",
+        "description": "Fokus des Rückschlag-Teams auf maximalen Winkel. Spieler A schlägt auf, Spieler X returniert extrem weit auf die Seite von der A gerade aufgeschlagen hat (dorthin wo A noch steht oder gerade wegläuft). Spieler B muss den weiten Ball erreichen. Mischung: 70% extremer Winkel, 30% gegenüberliegende Ecke. Bestraft langsames Ausweichen nach dem Aufschlag direkt — bleibt A zu lange stehen blockiert er B den Weg.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 769,
+        "name": "Handzeichen-Aufschlag-Angriff-System (Doppel)",
+        "description": "Partner gibt unter dem Tisch Handzeichen vor dem Aufschlag. Standard-Signale: Geballte Faust = No-Spin kurz, Zeigefinger nach unten = kurzer US, Daumen hoch = Topspin, Daumen links\/rechts = Seitschnitt. Zweites Zeichen für Länge: Faust = kurz, Finger vorwärts = lang. Aufschläger führt exakt den angesagten Aufschlag aus, Partner hat sich vorab für den erwarteten Return positioniert und greift den 3. Ball an. 20 Aufschläge, dann Rollenwechsel. Erfolgsquote messen. Pflicht ab mittlerem Leistungsniveau.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "aufschlag",
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 770,
+        "name": "Nachspieltaktik gegen RH-RH (Doppel Platzierung)",
+        "description": "Ball immer dorthin zurückspielen wo er hergekommen ist. Gegen RH-RH-Paare die kreiseln besonders wirksam: Der Ball kommt immer auf die Seite die der ausweichende Spieler gerade verlässt, der ankommende Spieler muss aus ungünstiger Position spielen. Die Laufwege des gegnerischen Paares werden systematisch gestört. Reguläre Sets bis 11 mit strikter Nachspieltaktik-Vorgabe. Gegen RH-LH-Paare gilt umgekehrt die 1-1-Taktik (Ball auf die andere Seite spielen).",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 771,
+        "name": "Ellbogen-Angriff mit Aufschlagvorbereitung (Doppel)",
+        "description": "4 Spieler. Spieler A: langer TS-Aufschlag in RH von X, weicht aus. Spieler X: RH-Block oder RH-TS in Mitte, weicht aus. Spieler B: VH-Topspin gezielt auf den Ellbogen (crossover point) von Spieler Y, weicht aus. Spieler Y: muss unter Druck VH oder RH entscheiden, spielt meist schwachen Ball. Spieler A: beendet den Punkt in die offene Ecke. Der Ellbogen ist die effektivste Zielzone im Doppel — der Gegner muss unter Zeitdruck zwischen VH und RH entscheiden und gleichzeitig an seine Rotation denken.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 772,
+        "name": "Kompletter Spielzug Kurz-Kurz-Flip-Topspin (Doppel BTTV)",
+        "description": "5 Bälle festgelegt: 1. Aufschläger A: kurzer US in VH des Rückschlägers. 2. Rückschläger X: legt kurz in RH zurück. 3. Partner B: legt erneut kurz in VH. 4. Partner Y: flippt diagonal in VH. 5. Aufschläger A: übernimmt den Flip, zieht VH-Topspin in den Ellbogen des Gegners. Ab Ball 6: frei. Trainiert einen kompletten im Wettkampf abrufbaren Spielzug. Die Kurz-Kurz-Phase erzwingt beim Gegner einen Flip der als Eröffnungsball für den Topspin genutzt wird.",
+        "player_count": 4,
+        "format": "partner",
+        "level": "leistung",
+        "content": [
+            "taktik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 773,
+        "name": "Balleimer-Zyklus Topspin-Schmetterball-Flip (Doppel)",
+        "description": "Zuspieler mit 50 Bällen, Doppelpaar auf einer Seite. 6er-Zyklus: 1. US in VH → Spieler A: VH-Topspin. 2. US in VH → Spieler B: VH-Topspin. 3. Hoher Ball → Spieler A: Schmetterschlag. 4. Hoher Ball → Spieler B: Schmetterschlag. 5. Kurzer Ball → Spieler A: Flip. 6. Kurzer Ball → Spieler B: Flip. 4 Zyklen ohne Pause, dann 60 Sek Pause, 3-4 Durchgänge. Trainiert drei verschiedene Angriffsschläge in Kombination mit der Doppelrotation unter Belastung.",
+        "player_count": 3,
+        "format": "multiball",
+        "level": "leistung",
+        "content": [
+            "beinarbeit",
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 774,
+        "name": "Ball auf dem Schläger balancieren",
+        "description": "Ball auf die VH-Seite des waagerecht gehaltenen Schlägers legen. Durch kleine Ausgleichsbewegungen mit Hand und Handgelenk möglichst lange halten. Ziel: 60 Sekunden ohne Ballverlust. Steigerungen: (a) Ball kreisförmig auf dem Schläger bewegen, (b) im Gehen balancieren, (c) Slalomparcours um Hütchen, (d) hinsetzen und aufstehen, (e) mit RH-Seite wiederholen, (f) als Staffelwettbewerb in Teams. Weiche, fliessende Ausgleichsbewegungen — keine ruckartigen Korrekturen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 775,
+        "name": "Ball abwechselnd VH\/RH auf dem Boden prellen",
+        "description": "Ball mit VH-Seite auf den Boden prellen. Beim Aufspringen Schläger schnell drehen und mit RH-Seite erneut prellen. Rhythmus: VH-RH-VH-RH. Anfangs langsam, dann Tempo steigern. Ziel: 20 fehlerfreie Wechsel in Folge. Griffhaltung beibehalten — nur über Handgelenkdrehung die Schlägerseite wechseln, nicht umgreifen. Grundlage für spätere VH\/RH-Wechsel am Tisch.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 776,
+        "name": "Ball abwechselnd VH\/RH hochtippen (Jonglieren)",
+        "description": "Ball mit VH-Seite 10-20cm nach oben tippen. Während der Ball in der Luft ist Schläger drehen und mit RH-Seite erneut hochtippen. Fortlaufend abwechseln. Ball beim Tippen leicht höher spielen als normal um mehr Zeit für die Schlägerdrehung zu haben. Ziel: 10 Wechsel ohne Ballverlust. Nur aus Handgelenk und Unterarm arbeiten, nicht aus dem ganzen Arm.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 777,
+        "name": "Ball gegen die Wand spielen",
+        "description": "Ca. 50cm vor einer glatten Wand stehen. Ball mit dem Schläger gegen die Wand tippen und den Rückprall wieder auffangen. Zunächst einzeln, dann rhythmisch fortlaufend ohne Zwischenstopp. Abstand schrittweise auf 1-2m vergrössern. Variationen: (a) Ball direkt (Volley) spielen, (b) mit Bodenberührung dazwischen, (c) nach jeder Berührung Schläger in die andere Hand, (d) Zielfläche an der Wand markieren. Nah an der Wand beginnen und gefühlvoll antippen statt schlagen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 778,
+        "name": "Kantentanz — Ball auf der Schlägerkante tippen",
+        "description": "Ball auf die schmale Kante des Schlägers tippen. Die Kontaktfläche beträgt nur wenige Millimeter — extreme Präzision erforderlich. Ziel: Möglichst viele Wiederholungen ohne Ballverlust. Steigerung: abwechselnd VH-Fläche, Kante, RH-Fläche tippen. Königsübung der Ballgewöhnung — eignet sich als Wettbewerb unter fortgeschrittenen Anfängern. Extrem konzentriert arbeiten, Ball nur wenige Zentimeter hoch tippen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 779,
+        "name": "Baumübung — Partnerreaktion",
+        "description": "Kind A (der Baum) steht mit seitlich ausgestreckten Armen und hält in jeder Hand einen TT-Ball. Kind B steht 2m entfernt mit Schläger. Der Baum lässt ohne Ankündigung einen Ball aus einer Hand fallen. Kind B muss sofort reagieren, hinlaufen und den Ball mit dem Schläger aufnehmen bevor dieser den Boden zum 2. Mal berührt. Nach 5 Durchgängen Rollentausch. Grundspannung aufbauen, Gewicht auf Fussballen, bereit zur explosiven Bewegung.",
+        "player_count": 2,
+        "format": "aufwaermen",
+        "level": "anfaenger",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 780,
+        "name": "Staffellauf mit Ballbalancieren",
+        "description": "Teams mit 3-5 Spielern. Parcours: Slalom um Hütchen, über Langbank laufen, durch Reifen steigen. Jeder Spieler durchläuft den Parcours mit Ball auf dem Schläger — balancierend oder tippend. Fällt der Ball herunter wird an der Fehlerstelle fortgesetzt. Schnellstes Team gewinnt. Variation Fortgeschrittene: Ball im Gehen auf dem Boden prellen statt balancieren. Kontrolliertes Tempo wichtiger als reine Geschwindigkeit.",
+        "player_count": 6,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 781,
+        "name": "Schattentraining VH-Konter (Trockenübung)",
+        "description": "Ohne Ball in Grundstellung: Füsse schulterbreit, rechter Fuss leicht zurück (Rechtshänder), Knie gebeugt. Schlagbewegung langsam in 4 Phasen: (1) Ausholphase — Gewicht auf rechten Fuss, Hüfte nach rechts drehen, Schläger neben Hüfte. (2) Schlagphase — Gewicht auf linken Fuss, Hüfte nach vorne, Unterarm nach vorne-oben wie Militärgruss. (3) Ausschwung — Schläger bis Stirnhöhe. (4) Rückführung. 10-15 langsame Wiederholungen. Freie Hand auf Hüfte legen um Drehbewegung zu spüren.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 782,
+        "name": "Balleimertraining VH-Konter — feste Position",
+        "description": "Trainer mit 20-50 Bällen spielt dem Übenden in moderatem Tempo auf die VH-Seite zu. Übender spielt jeden Ball mit VH-Konter diagonal zurück. Pro Durchgang 10 Bälle, dann wechselt der nächste Spieler. Langsamer Einspielrhythmus gibt dem Anfänger mehr Zeit sich auf die Schlagausführung zu konzentrieren. Balleimertraining im Anfängerbereich ist ein Muss (BTTV). Fussball-grosse Lücke zwischen Ellbogen und Rumpf, Handgelenk relativ gerade halten.",
+        "player_count": 2,
+        "format": "multiball",
+        "level": "anfaenger",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 783,
+        "name": "VH- und RH-Konter im Wechsel (1:1-Drill Anfänger)",
+        "description": "Zuspieler spielt abwechselnd einen Ball auf VH und einen auf RH des Übenden. Übender wechselt mit Sidesteps zwischen VH-Konter und RH-Konter. Pro Durchgang 20 Bälle, dann Rollentausch. Rhythmus muss gleichmässig sein — Zuspieler wartet bis der Übende wieder in der Grundstellung steht. Seitliche Schritte (Sidesteps) statt Kreuzschritte. Grundstellung wird nach jedem Schlag aktiv wiederhergestellt.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "anfaenger",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 784,
+        "name": "Random-Drill VH\/RH Entscheidungstraining (Anfänger)",
+        "description": "Zuspieler spielt Bälle zufällig auf VH oder RH. Übender muss in Sekundenbruchteilen entscheiden ob VH-Konter oder RH-Konter, und sich entsprechend positionieren. Erst mittlere Geschwindigkeit, dann steigern. Ball früh lesen — bereits beim Schlag des Zuspielers erkennen wohin der Ball fliegt. Grundstellung nach jedem Schlag sofort wiederherstellen. Larry Hodges: vorletzte Stufe der 6-Stufen-Trainingsprogression vor dem freien Spiel.",
+        "player_count": 2,
+        "format": "partner",
+        "level": "anfaenger",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 785,
+        "name": "Unterschnittgefühl entwickeln (Schupf-Vorstufe)",
+        "description": "Experimentieren mit geöffnetem Schlägerblatt. Schritt 1: Ball auf leicht geöffnete Schlägerfläche legen und halten. Schritt 2: Ball auf dem Schläger nur 1-2cm hoch tippen — gelingt nur bei leicht geöffnetem Blatt. Schritt 3 (ohne Tisch): Ball seitlich in den Schläger werfen und unter dem Ball hindurchstreichen, sodass er mit US gerade nach oben fliegt. Schritt 4 (Bumerang): Auf dem Boden Ball so mit US streifen dass er über eine Linie rollt und zum Spieler zurückrollt. Streichen nicht schlagen!",
+        "player_count": 1,
+        "format": "solo",
+        "level": "anfaenger",
+        "content": [
+            "technik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 786,
+        "name": "Rundlauf (Chinesisch)",
+        "description": "Mindestens 4 Spieler in zwei Reihen an den Tischhälften. Erster Spieler schlägt auf, spielt den Ball und läuft sofort gegen den Uhrzeigersinn zur anderen Seite. Jeder spielt einen Ball und reiht sich gegenüber ein. Fehler = ausscheiden (oder 1 von 3 Leben verlieren). Letzte zwei spielen Finale bis 3 Punkte. Varianten: (a) nur VH, (b) mit zwei Schlägern auf dem Tisch die aufgehoben werden müssen, (c) Zusatzaufgabe nach jedem Schlag (Boden berühren, Drehung). DER Klassiker für jede Gruppenstunde.",
+        "player_count": 4,
+        "format": "spielform",
+        "level": "anfaenger",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 787,
+        "name": "Mini-Tischtennis (halber Tisch)",
+        "description": "Nur auf einer Tischhälfte spielen — jeder Spieler hat ca. 76x76cm Spielfeld. Reguläre Zählung bis 11. Durch das kleinere Spielfeld sind Wege kürzer, Ballkontrolle leichter und Ballwechsel länger. Varianten: (a) nur RH erlaubt, (b) nur Schupf erlaubt, (c) Ball muss in bestimmte Zonen. Bewusst gefühlvoll und kontrolliert spielen — kleiner Tisch belohnt Präzision statt Kraft. Vom DTTB ausdrücklich für das Grundschulalter empfohlen.",
+        "player_count": 2,
+        "format": "spielform",
+        "level": "anfaenger",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 788,
+        "name": "Schneeballschlacht \/ Räumball",
+        "description": "Halle durch Turnbänke in zwei Hälften teilen. Jedes Team startet mit 20-30 TT-Bällen. Auf Startsignal versuchen alle Spieler ihre Bälle mit dem Schläger ins gegnerische Feld zu schlagen. Regeln: nur Schlägerkontakt, eigenes Feld nicht verlassen, nur ein Ball gleichzeitig. Nach 2 Minuten stoppen: Team mit weniger Bällen im eigenen Feld gewinnt. Aus dem DTTB-Schnupperkurs-Modulbaukasten. Kombiniert Ballgewöhnung mit Bewegungsfreude. Perfektes Aufwärmspiel.",
+        "player_count": 8,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 789,
+        "name": "Feuer-Wasser-Blitz TT-Edition",
+        "description": "Alle Spieler laufen mit Ball auf dem Schläger balancierend durch die Halle. Trainer variiert Laufformen: Sidesteps, Rückwärtslaufen, Kniehebelauf. Auf Zuruf reagieren: Feuer = zur Ecke laufen und paarweise aufstellen. Wasser = auf etwas Erhöhtes klettern (Ball bleibt auf Schläger). Blitz = tiefe TT-Grundstellung. Freeze = erstarren. Zusatzkommandos: Topspin = Schlagbewegung simulieren, Aufschlag = Aufschlagbewegung. Schwieriger: Ball tippen statt balancieren. Langsamster bekommt Zusatzaufgabe.",
+        "player_count": 6,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 790,
+        "name": "Koordinationsleiter-Parcours",
+        "description": "Koordinationsleiter auf den Boden legen. Jedes Muster 2-3 Durchgänge: einbeinig in jedes Feld springen (rechts dann links), beidbeinig, Icky Shuffle (seitliches Crossover), Ein-Raus-Muster, seitlich in TT-Grundstellung. Nach der Leiter 3m-Sprint zur Markierung, dort VH- oder RH-Schlagbewegung ausführen, hinten anstellen. Rückwärts durch die Leiter für Fortgeschrittene. Wettkampf: fehlerfreier Durchgang auf Zeit.",
+        "player_count": 4,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 791,
+        "name": "Springseil-Challenge",
+        "description": "Vier Phasen: Phase 1 beidbeinig springen (1 Min), Phase 2 abwechselnd rechts-links im Laufschritt (1 Min), Phase 3 Doppeldurchschlag so viele wie möglich (30 Sek), Phase 4 Kreuzspringen mit überkreuzten Armen (30 Sek). Abschluss: 1 Minute durchspringen ohne Pause. Wettbewerb: meiste Durchschläge in 60 Sekunden. Sidestep-Springen für TT-Fussarbeit. Tabata-Intervall: 20 Sek schnell, 10 Sek langsam.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 792,
+        "name": "Körperteil-Jonglage",
+        "description": "Ball mit Schläger hochtippen, dann auf ein Körperteil lenken (Oberschenkel, Schulter, Innenrist, Ellenbogen) und von dort zurück auf den Schläger prallen lassen. Trainer gibt Sequenzen vor: Schläger → Oberschenkel → Schläger (3x), dann Schläger → Schulter → Schläger → Innenrist → Schläger (3x). Wettbewerb: längste Sequenz ohne Bodenkontakt. Spielhand wechseln, VH\/RH abwechseln. Trainer ruft Körperteile spontan zu für Umstellungsfähigkeit.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 793,
+        "name": "Zombieball",
+        "description": "Spielfeld: eine Hallenhälfte. 3-5 Softbälle verteilt. Alle laufen frei umher. Wer Ball aufhebt darf max 3 Schritte machen und versucht anderen Spieler unterhalb der Hüfte abzuwerfen. Getroffene setzen sich 30 Sek an den Rand. Wer Ball fängt ist nicht getroffen — Werfer setzt stattdessen aus. Bälle dürfen max 5 Sekunden gehalten werden. Letzter stehender Spieler gewinnt. Variante: Getroffene werden Zombies und dürfen sich nur hockend bewegen. Perfektes Aufwärmspiel mit hoher Intensität.",
+        "player_count": 8,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 794,
+        "name": "Nummern-Reaktions-Sprint",
+        "description": "Paare bilden, 3m Abstand auf zwei Linien gegenüber. Jeder bekommt Nummer 1 oder 2. Beide machen Übungen auf der Stelle (Sidesteps, Hocksprünge, Teppings). Trainer ruft plötzlich 1 oder 2 — gerufene Nummer sprintet zur Wand (5m), Partner versucht zu ticken. Wer Markierung vor dem Ticken erreicht: 1 Punkt. Nach 10 Runden auswerten. Statt Nummern TT-Begriffe: Vorhand = Nr.1 läuft, Rückhand = Nr.2. Start aus TT-Grundstellung.",
+        "player_count": 6,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 795,
+        "name": "Zähl-Rallye Rekord-Challenge",
+        "description": "Beide Spieler spielen lockere Rallye und zählen LAUT die Ballwechsel mit: 1, 2, 3, 4... Ziel: neuen Paarrekord aufstellen (50, 100, 200 ohne Fehler). Bei Fehler von vorne. Trainer notiert besten Wert jedes Paares. Welches Paar hält den Hallenrekord? Varianten: nur RH, nur Schupf, abwechselnd VH\/RH. Tempo-Steigerung: ab Ballwechsel 20 schneller spielen. Retter-Regel: einmal darf Ball vom Boden aufgenommen und weitergespielt werden.",
+        "player_count": 2,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 796,
+        "name": "Ballonspiel (erhöhtes Netz)",
+        "description": "Über dem regulären Netz eine Schnur oder Band in 30-50cm Höhe spannen. Ball muss in hoher Flugkurve über beide Barrieren gespielt werden. Als Rallye: maximale Ballwechselzahl. Ball zwischen den Netzen durch oder ins Netz = Punkt für Gegner. Bis 11 Punkte. Trainiert Flugkurvenkontrolle und Schlägerblattanpassung. Varianten: nur Schupf erlaubt, Höhe variieren, freies Spiel mit Punktzählung.",
+        "player_count": 2,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 797,
+        "name": "2-Minuten-Rotations-Einspielen",
+        "description": "An 4-6 Tischen je 2 Spieler. Eine Seite = Festseite, andere = Wechselseite. Trainer gibt Übung vor. Nach 2 Minuten Pfiff: alle auf der Wechselseite rücken einen Tisch weiter. Neue Übung. Beispielfolge 10 Min: VH-Kontern diagonal (2 Min), RH-Kontern diagonal (2 Min), VH-Topspin auf Block (2 Min), RH-Topspin auf Block (2 Min), freies Einspielen (2 Min). Minimiert Wartezeiten, maximiert Partnerwechsel. Organisationsformat für grosse Gruppen.",
+        "player_count": 8,
+        "format": "aufwaermen",
+        "level": "alle",
+        "content": [
+            "koordination"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 798,
+        "name": "Schwimmen (Hindernis-Rundlauf)",
+        "description": "Wie klassischer Rundlauf, aber: wenn ein Spieler ausscheidet legt er seinen Schläger offen auf die Tischplatte. Die Schläger dienen als Hindernisse — der Ball kann daran verspringen und unberechenbar die Richtung ändern. Mit jedem Ausscheidenden wird das Spielfeld chaotischer. Im Endspiel liegen zahlreiche Schläger auf der Platte — extrem unberechenbar und sorgt für grosses Gelächter.",
+        "player_count": 4,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 799,
+        "name": "TT-Biathlon",
+        "description": "Bande am Hallenrand aufstellen. Abschusspunkt 2-3m entfernt. Staffellauf vom anderen Hallenende. Spieler sprintet zum Abschusspunkt und muss 5 Bälle hinter die Bande spielen (mit Schläger). Für jeden Fehlschuss eine Strafrunde um ein Hütchen. Danach Übergabe an nächsten Teamkameraden. Schnellstes Team gewinnt. Verschiedene Entfernungen für verschiedene Altersgruppen. Kombiniert Sprint, Präzision unter Belastung und Teamwettkampf.",
+        "player_count": 6,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 800,
+        "name": "Rundlauf-Memory",
+        "description": "Alle auf der linken Seite des ersten Tisches. Trainer spielt mit Balleimer Bälle ein (z.B. VH-Konter diagonal). Jeder hat einen Versuch. Auf dem entferntesten Tisch liegen 6 verdeckte Pokerkarten. Bei Treffer: Karte umdrehen, Wert merken, verdeckt zurücklegen, hinten anstellen. Bei Fehler: 2 Bälle einsammeln, in Eimer legen, um 3 Tische herumlaufen, hinten anstellen. Wer die Summe aller 6 Karten dem Trainer korrekt ins Ohr flüstert hat gewonnen. Variante: Scrabble-Buchstaben statt Karten.",
+        "player_count": 6,
+        "format": "spielform",
+        "level": "alle",
+        "content": [
+            "spiel_spass"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 801,
+        "name": "Seitliche Ausfallschritte (Lateral Lunges)",
+        "description": "Aufrechter Stand, Füsse hüftbreit. Grossen Schritt nach rechts, linken Fuss am Boden lassen. Rechtes Knie beugen, Hüfte nach hinten-unten schieben. Linkes Bein bleibt gestreckt. Rechtes Knie über Fussspitzen, Oberschenkel annähernd parallel zum Boden. Explosiv zurückdrücken, Seite wechseln. 3-4 Sätze × 10-12 pro Seite. Häufige Fehler: Knie fällt nach innen (Valgus) — Innenbandrisiko. Oberkörper zu weit vorne. Zu flache Ausführung. Trainiert Adduktoren und Hüftstabilisatoren für schnelle Seitwärtsbewegungen am Tisch.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 802,
+        "name": "Bulgarische Kniebeugen (Bulgarian Split Squats)",
+        "description": "60-80cm vor einer Bank stehen. Fussrücken des hinteren Beins auf die Bank legen. Vorderer Fuss flach am Boden. Oberkörper aufrecht. Absenken bis vorderes Knie ca. 90° gebeugt, hinteres Knie Richtung Boden. Über die Ferse nach oben drücken. 3 × 8-10 pro Bein. Häufige Fehler: Zu nah an der Bank — Knie wandert zu weit vor. Oberkörper kippt — belastet unteren Rücken. Hoher propriozeptiver Anspruch, trainiert einbeinige Stabilität wie bei TT-Ausfallschritten zum kurzen Ball.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 803,
+        "name": "Wandsitzen mit Schattenschlägen",
+        "description": "Rücken flach an Wand, Oberschenkel parallel zum Boden (90° Kniewinkel). Füsse schulterbreit, 50-60cm von der Wand. Position halten. TT-spezifische Variante: im Wandsitz Schattenschläge mit den Armen ausführen — VH-Topspin, RH-Block etc. 3-4 × 30-60 Sek. Fortgeschrittene: einbeinig 3 × 20-30 Sek pro Bein. Häufige Fehler: Oberschenkel erreichen nicht die Parallele. Knie ragen über Zehen. Fersen heben ab. Atem anhalten.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 804,
+        "name": "Wadenheben auf Stufenkante",
+        "description": "Auf der Kante einer Stufe oder Hallenbank stehen, Fussballen auf der Kante, Fersen hängen frei. Fersen langsam unter Stufenniveau absenken (volle Dehnung). Auf die Zehenspitzen so hoch wie möglich steigen, Wadenmuskulatur anspannen. 1-2 Sek halten. Langsam absenken (3 Sek exzentrisch). 3-4 × 15-20 beidbeinig, einbeinig 3 × 10-12 pro Bein. Häufige Fehler: Federn am tiefsten Punkt — Achillessehnenbelastung. Exzentrische Phase zu schnell. TT-Spieler brauchen starke Waden für die permanente Vorfussbelastung.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 805,
+        "name": "Plank mit Shoulder Taps (Anti-Rotation)",
+        "description": "Liegestützposition, Hände unter Schultern, Arme gestreckt. Rumpf anspannen, gerade Linie von Kopf bis Fersen. Rechte Hand lösen und linke Schulter antippen. Zurücksetzen. Dann links antippen. Während der gesamten Bewegung aktiv jede Rotation der Hüfte verhindern — Hüfte bleibt parallel zum Boden. 3 × 8 pro Seite (Anfänger) bis 4 × 15 pro Seite. Häufige Fehler: Hüfte schwingt seitlich — verfehlt Anti-Rotations-Zweck. Hüfte sackt ab. Füsse etwas breiter stellen für mehr Stabilität.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 806,
+        "name": "Seitstütz mit Rotation (Thread the Needle)",
+        "description": "Seitstütz auf rechtem Ellenbogen, Körper gerade Linie. Linken Arm zur Decke strecken. Oberkörper langsam nach unten drehen, linken Arm unter dem Körper hindurchfädeln. Rotation umkehren, Arm zurück zur Decke. Hüfte bleibt durchgängig oben und stabil. 2 × 6-8 pro Seite (Anfänger) bis 3 × 12-15. Trainiert schräge Bauchmuskeln und Brustwirbelsäulen-Rotation — direkt relevant für die Rumpfrotation beim Topspin-Schlag.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 807,
+        "name": "Toter Käfer (Dead Bug)",
+        "description": "Rückenlage, Arme senkrecht zur Decke, Beine angehoben (Hüfte und Knie 90°). Unteren Rücken FEST in die Matte pressen. Gleichzeitig rechten Arm über den Kopf und linkes Bein gerade nach vorne strecken, knapp über dem Boden schwebend. 3-4 Sek für die Streckung. Unterer Rücken muss durchgängig am Boden bleiben — sobald er sich wölbt ist die Grenze erreicht. 3 × 6 pro Seite (Anfänger) bis 4 × 12. Häufigster Fehler: Hohlkreuz — Bewegungsumfang reduzieren bis Rücken flach bleibt.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 808,
+        "name": "Pallof-Press mit Widerstandsband (Anti-Rotation)",
+        "description": "Widerstandsband auf Brusthöhe befestigen. Senkrecht zum Ankerpunkt stehen, Band mit beiden Händen vor der Brust. Seitlich wegtreten bis moderate Spannung. Beide Arme langsam gerade nach vorne strecken — Band versucht den Rumpf zu drehen, mit dem Rumpf dagegen arbeiten. Schultern und Hüfte bleiben exakt nach vorne gerichtet. 2-3 Sek halten. 3 × 8 pro Seite (Anfänger) bis 4 × 12 mit 5 Sek Halten. Trainiert exakt die Anti-Rotationskraft die beim Abbremsen der Schlagbewegung benötigt wird.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 809,
+        "name": "Holzhacker mit Widerstandsband (Diagonale Rotation)",
+        "description": "Band an niedrigem Punkt verankern. Senkrecht stehen, Band nahe der rechten Hüfte greifen. Durch Beine nach oben drücken, Rumpf nach links rotieren, Band diagonal aufwärts zur linken Schulter führen (Low-to-High-Chop). Bewegung durch Hüftdrive und Rumpfrotation einleiten, NICHT durch die Arme. Kontrolliert zurückführen (2-3 Sek exzentrisch). 3 × 8 pro Seite bis 4 × 12-15. Simuliert direkt die kinetische Kette des VH-Topspins. Häufiger Fehler: Arme führen statt Hüfte — verliert kinetischen Ketteneffekt.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 810,
+        "name": "Theraband Aussen-\/Innenrotation (Rotatorenmanschette)",
+        "description": "Aussenrotation: Band auf Hüfthöhe befestigen. Seitlich stehen, Band mit äusserer Hand greifen. Ellenbogen 90° gebeugt, eng am Rumpf (Handtuch dazwischen klemmen). Unterarm langsam nach aussen drehen, 1-2 Sek halten, zurückführen. Innenrotation: gleicher Aufbau, Band mit innerer Hand greifen, Unterarm zum Bauch ziehen. 3 × 10-15 pro Seite, 2-3× pro Woche. 20% aller TT-Verletzungen betreffen die Schulter — diese Übung ist der wichtigste Schutz gegen Impingement und Rotatorenmanschetten-Überlastung.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 811,
+        "name": "Skapuläre Liegestütze (Serratus-Aktivierung)",
+        "description": "Liegestützposition, Arme DURCHGEHEND gestreckt — keine Ellenbogenbeugung! Brustkorb zwischen die Schulterblätter absenken (Schulterblätter zusammenführen = Retraktion). Dann aktiv nach oben drücken durch maximales Auseinanderspreizen der Schulterblätter (Protraktion). Oberer Rücken wird leicht rund. Nur Schulterblätter bewegen sich. 3 × 12-15. Erleichtert: auf Knien oder an der Wand. Trainiert den M. serratus anterior — Schlüsselmuskel für Schulterstabilität beim Schlagen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 812,
+        "name": "I-Y-T-Hebungen mit Theraband",
+        "description": "Schrittstellung, Oberkörper 30-45° vorgeneigt, Rücken gerade. Auf Bandmitte stehen, Enden halten. I: Arme gestreckt gerade nach vorne-oben heben (neben Ohren), Daumen hoch. Y: Arme 45° seitlich nach vorne-oben (Y-Form), Schulterblätter zusammenziehen. T: Arme zur Seite auf Schulterhöhe (T-Form), Schulterblätter aktiv zusammen. Alle drei nacheinander. 2-3 × 8-10 pro Position. Adressiert die hintere Schultermuskulatur die bei TT-Spielern durch ständige Topspin-Belastung geschwächt ist.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 813,
+        "name": "Hocksprung und Lateralsprung (Plyometrie)",
+        "description": "Hocksprung: Schulterbreiter Stand, volle Kniebeuge (Oberschenkel parallel), explosiv nach oben springen mit maximaler Kraft. Weich auf Fussballen landen, 1-2 Sek Reset. 3 × 8-10. Lateralsprung (TT-spezifisch): TT-Grundstellung, explosiv seitlich springen, weich in Grundstellung landen, sofort zurückspringen. Bodenkontaktzeit minimieren. 3 × 10 (5 pro Seite). 5-Wochen-Studie zeigte 6.8-18% Verbesserung in Sprungleistung und Richtungswechsel bei jungen TT-Spielern. IMMER in die Kniebeuge landen, nie mit gestreckten Beinen.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "fortgeschritten",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    },
+    {
+        "id": 814,
+        "name": "TT-spezifisches Cool-Down (5 Dehnübungen)",
+        "description": "NUR nach dem Training, nie davor. 5 Dehnübungen je 20-30 Sek, 2-3 Wiederholungen pro Seite: (1) Schulter-Querdehnung: Arm horizontal vor Brust, sanft zur Gegenseite ziehen. Schlagarmseite intensiver. (2) Trizepsdehnung über Kopf: Ellenbogen beugen, Hand hinter Kopf, Ellenbogen sanft nach unten ziehen. (3) Handgelenk-Flexoren und -Extensoren: Arm gestreckt, Finger nach oben\/unten ziehen. BEIDE Seiten! (4) Hüftbeugerdehnung im Kniestand: Becken nach hinten kippen, Hohlkreuz vermeiden. 30-45 Sek. (5) Rumpfrotation in Rückenlage: T-Position, gekreuzte Beine zur Seite sinken lassen, Schulterblätter am Boden. 30-45 Sek pro Seite.",
+        "player_count": 1,
+        "format": "solo",
+        "level": "alle",
+        "content": [
+            "athletik"
+        ],
+        "strokes": null,
+        "variations": null,
+        "repeat_markers": null
+    }
+]

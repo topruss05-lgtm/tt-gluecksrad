@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="190 Tischtennisübungen für Trainer — filtere nach Technik, Beinarbeit, Aufschlag, Taktik und mehr">
+    <title>TT-Übungskatalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                fontFamily: {
+                    sans: ['DM Sans', 'system-ui', 'sans-serif'],
+                    mono: ['JetBrains Mono', 'monospace']
+                },
+                colors: {
+                    base: { DEFAULT: '#0c1017', '50': '#111820', '100': '#161e28', '200': '#1c2530', '300': '#232d3a', '400': '#2a3544' },
+                    accent: { DEFAULT: '#ff6b35', light: '#ff8a5c', dark: '#e55a28', glow: 'rgba(255,107,53,0.15)' },
+                    cool: { DEFAULT: '#5b9bd5', light: '#7db3e4', ice: '#a8d4f5' },
+                    field: { DEFAULT: '#1a6b3a', light: '#228b4a', dark: '#145a30' },
+                }
+            }}
+        }
+    </script>
+    <script src="js/diagram.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-base text-gray-200 font-sans min-h-screen" x-data="app()" x-cloak>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="sticky top-0 z-50 border-b border-white/[0.06]" style="background: linear-gradient(180deg, rgba(12,16,23,0.97) 0%, rgba(12,16,23,0.92) 100%); backdrop-filter: blur(20px) saturate(1.2)">
+        <div class="px-6 py-4 flex items-center gap-5">
+            <div class="flex items-center gap-3 shrink-0">
+                <span class="ball-dot"></span>
+                <h1 class="text-lg font-bold tracking-tight">
+                    <span class="text-white">TT</span><span class="text-white/40">-</span><span class="text-white/70 font-medium">Übungskatalog</span>
+                </h1>
+            </div>
+
+            <div class="flex-1 max-w-md relative">
+                <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-white/25" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+                <input type="text" x-model.debounce.200ms="search"
+                    placeholder="Übung suchen..."
+                    class="w-full pl-10 pr-4 py-2.5 bg-white/[0.04] border border-white/[0.06] rounded-xl text-sm text-white placeholder-white/30 outline-none focus:border-accent/40 focus:bg-white/[0.06] transition-all duration-200">
+            </div>
+
+            <div class="font-mono text-xs text-white/25 shrink-0" x-text="filteredExercises.length + ' von ' + exercises.length + ' Übungen'"></div>
+        </div>
+
+        <!-- Filters -->
+        <div class="px-6 pb-3.5 flex gap-2 flex-wrap items-center">
+            <span class="text-[10px] text-white/20 uppercase tracking-wider mr-1">Was</span>
+            <template x-for="c in contentOptions">
+                <button x-on:click="toggleContent(c.key)"
+                    :class="activeContent.includes(c.key) ? 'active bg-accent/15 border-accent/40 text-accent-light' : 'border-white/[0.06] text-white/40 hover:text-white/60 hover:border-white/[0.12]'"
+                    class="filter-pill px-3 py-1.5 rounded-lg border text-xs font-medium"
+                    x-text="c.label + ' (' + contentCount(c.key) + ')'"></button>
+            </template>
+
+            <div class="w-px h-5 bg-white/[0.06] mx-1.5"></div>
+
+            <span class="text-[10px] text-white/20 uppercase tracking-wider mr-1">Wie</span>
+            <template x-for="f in formatOptions">
+                <button x-on:click="activeFormat = activeFormat === f.key ? null : f.key"
+                    :class="activeFormat === f.key ? 'active bg-cool/15 border-cool/40 text-cool-light' : 'border-white/[0.06] text-white/40 hover:text-white/60 hover:border-white/[0.12]'"
+                    class="filter-pill px-3 py-1.5 rounded-lg border text-xs font-medium"
+                    x-text="f.label"></button>
+            </template>
+
+            <div class="w-px h-5 bg-white/[0.06] mx-1.5"></div>
+
+            <span class="text-[10px] text-white/20 uppercase tracking-wider mr-1">Level</span>
+            <template x-for="l in levelOptions">
+                <button x-on:click="activeLevel = activeLevel === l.key ? null : l.key"
+                    :class="activeLevel === l.key ? 'active bg-white/10 border-white/20 text-white' : 'border-white/[0.06] text-white/40 hover:text-white/60 hover:border-white/[0.12]'"
+                    class="filter-pill px-3 py-1.5 rounded-lg border text-xs font-medium"
+                    x-text="l.label"></button>
+            </template>
+
+            <div class="w-px h-5 bg-white/[0.06] mx-1.5"></div>
+
+            <button x-on:click="mirrored = !mirrored"
+                :class="mirrored ? 'bg-cool/15 border-cool/40 text-cool-light' : 'border-white/[0.06] text-white/40 hover:text-white/60 hover:border-white/[0.12]'"
+                class="filter-pill px-3 py-1.5 rounded-lg border text-xs font-medium flex items-center gap-1.5">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+                Gespiegelt
+            </button>
+
+            <button x-show="activeContent.length || activeFormat || activeLevel"
+                x-on:click="activeContent = []; activeFormat = null; activeLevel = null"
+                class="px-2.5 py-1.5 rounded-lg text-[10px] font-medium text-white/30 hover:text-white/60 transition">
+                Filter zurücksetzen
+            </button>
+        </div>
+
+        <!-- Active filter chips -->
+        <div x-show="activeContent.length || activeFormat || activeLevel" class="px-6 pb-3 flex gap-1.5 flex-wrap">
+            <template x-for="c in activeContent">
+                <span x-on:click="toggleContent(c)" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[10px] font-medium bg-accent/10 text-accent-light border border-accent/20 cursor-pointer hover:bg-accent/20 transition">
+                    <span x-text="contentLabels[c]"></span>
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </span>
+            </template>
+            <span x-show="activeFormat" x-on:click="activeFormat = null" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[10px] font-medium bg-cool/10 text-cool-light border border-cool/20 cursor-pointer hover:bg-cool/20 transition">
+                <span x-text="formatLabels[activeFormat]"></span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </span>
+            <span x-show="activeLevel" x-on:click="activeLevel = null" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[10px] font-medium bg-white/10 text-white/60 border border-white/10 cursor-pointer hover:bg-white/20 transition">
+                <span x-text="levelLabels[activeLevel]"></span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </span>
+        </div>
+    </header>
+
+    <!-- ═══════════════ MAIN LAYOUT ═══════════════ -->
+    <div class="flex" style="height: calc(100vh - 118px)">
+
+        <!-- ─── SIDEBAR ─── -->
+        <aside class="w-80 min-w-[320px] border-r border-white/[0.06] overflow-y-auto bg-base-50/50">
+            <template x-for="group in groupedExercises" :key="group.type">
+                <div>
+                    <div class="sticky top-0 z-20 px-5 py-2.5 border-b border-white/[0.06] flex items-center gap-2.5 cursor-pointer hover:bg-white/[0.03] transition"
+                         x-on:click="activeFormat = activeFormat === group.type ? null : group.type"
+                         :class="activeFormat === group.type ? 'bg-white/[0.04]' : ''"
+                         style="background: linear-gradient(180deg, rgba(17,24,32,0.98) 0%, rgba(17,24,32,0.94) 100%); backdrop-filter: blur(12px)">
+                        <span class="w-1.5 h-1.5 rounded-full" :style="'background: var(--fmt-color)'"
+                              :class="'fmt-' + group.type"></span>
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.1em]"
+                              :class="activeFormat === group.type ? 'text-white/80' : 'text-white/50'"
+                              x-text="formatLabels[group.type] || group.type"></span>
+                        <span class="font-mono text-[10px] text-white/20 ml-auto" x-text="group.total"></span>
+                    </div>
+
+                    <template x-for="sub in group.subGroups" :key="sub.label">
+                        <div>
+                            <template x-for="ex in sub.exercises" :key="ex.id">
+                                <div x-on:click="select(ex)"
+                                    :class="selectedId === ex.id
+                                        ? 'bg-accent/[0.08] border-l-accent'
+                                        : 'border-l-transparent hover:bg-white/[0.02]'"
+                                    class="sidebar-item px-4 py-3 border-b border-white/[0.03] cursor-pointer border-l-2 flex items-center gap-3">
+                                    <div class="flex-1 min-w-0 text-[12.5px] truncate"
+                                         :class="selectedId === ex.id ? 'text-white/90' : 'text-white/50'"
+                                         x-text="ex.name"></div>
+                                    <span class="w-1 h-1 rounded-full opacity-30" :style="'background: var(--fmt-color)'"
+                                          :class="'fmt-' + ex.format"></span>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </aside>
+
+        <!-- ─── MAIN CONTENT ─── -->
+        <main class="flex-1 overflow-y-auto">
+
+            <!-- Empty state -->
+            <template x-if="!selected">
+                <div class="flex items-center justify-center h-full">
+                    <div class="text-center">
+                        <div class="ball-dot mx-auto mb-6" style="width: 24px; height: 24px; opacity: 0.3"></div>
+                        <p class="text-white/20 text-sm font-medium">Übung aus der Liste wählen</p>
+                        <p class="text-white/10 text-xs mt-1.5 font-mono" x-text="exercises.length + ' Übungen verfügbar'"></p>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Exercise detail -->
+            <template x-if="selected">
+                <div class="p-8 lg:p-10 detail-animate">
+
+                    <!-- Header row -->
+                    <div class="flex items-start gap-5 mb-8">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-3 flex-wrap">
+                                <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-cool/10 text-cool-light border border-cool/20"
+                                      x-text="formatLabels[selected.format] || selected.format"></span>
+                                <span class="px-2.5 py-1 rounded-md text-[10px] font-medium bg-white/5 text-white/40 border border-white/[0.06]"
+                                      x-text="levelLabels[selected.level] || selected.level"></span>
+                                <template x-for="c in (selected.content || [])">
+                                    <span class="px-2 py-0.5 rounded text-[9px] font-medium bg-accent/8 text-accent/70 border border-accent/15"
+                                          x-text="contentLabels[c] || c"></span>
+                                </template>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-medium bg-white/[0.04] border border-white/[0.06] text-white/40">
+                                    <template x-for="i in (selected.player_count || 2)">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                    </template>
+                                    <span x-text="selected.player_count >= 4 ? selected.player_count + '+' : ''"></span>
+                                </span>
+                                <template x-if="detectEquipment(selected).length">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-medium bg-white/[0.04] border border-white/[0.06] text-white/30">
+                                        <template x-for="eq in detectEquipment(selected)">
+                                            <span x-text="eq" class="text-white/40"></span>
+                                        </template>
+                                    </span>
+                                </template>
+                            </div>
+                            <h2 class="text-xl font-medium text-white/90 leading-snug" x-text="selected.name"></h2>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div x-show="selected.description" class="mb-8">
+                        <div class="exercise-description p-5 rounded-xl bg-white/[0.02] border border-white/[0.05]"
+                             x-html="highlightStrokeCodes(selected.description)"></div>
+                    </div>
+
+                    <!-- Repeat marker -->
+                    <div x-show="(selected.repeat_markers||[]).length" class="mb-6">
+                        <template x-for="rm in (selected.repeat_markers||[])">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-2 bg-amber-500/[0.08] border border-amber-500/20 rounded-lg font-mono text-xs text-amber-400/80">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                                Nach Schlag <span class="font-semibold text-amber-300" x-text="rm.after_sequence"></span>
+                                weiter ab Schlag <span class="font-semibold text-amber-300" x-text="rm.go_to_sequence"></span>
+                            </span>
+                        </template>
+                    </div>
+
+                    <!-- Shot sequence -->
+                    <div x-show="(selected.strokes||[]).length" class="mb-8">
+                        <h3 class="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-3">Schlagfolge</h3>
+                        <div class="flex gap-1.5 flex-wrap items-center">
+                            <template x-for="(s, i) in (selected.strokes||[])">
+                                <span class="contents">
+                                    <span x-show="i > 0" class="text-white/10 text-sm self-center px-0.5">&rarr;</span>
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg font-mono text-[11px] bg-white/[0.03] border border-white/[0.06]">
+                                        <span class="w-4 h-4 rounded-full inline-flex items-center justify-center text-[9px] font-bold"
+                                            :class="s.player==='A' ? 'bg-accent text-base' : 'bg-cool text-base'"
+                                            x-text="s.sequence_order"></span>
+                                        <span class="font-semibold" :style="'color:' + getStrokeColor(s.stroke_type_code)" x-text="s.stroke_type_code"></span>
+                                        <span class="text-white/20 text-[9px]" x-text="s.start_zone ? zoneLabel(s.start_zone) + '→' + zoneLabel(s.end_zone) : (s.direction||'')"></span>
+                                    </span>
+                                </span>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Diagrams -->
+                    <div x-show="(selected.strokes||[]).length" class="mb-8">
+                        <h3 class="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-4">Tischdiagramme</h3>
+                        <div x-ref="diagram" class="flex gap-4 flex-wrap"></div>
+                    </div>
+
+                    <!-- Variations -->
+                    <div x-show="(selected.variations||[]).length" class="mb-8">
+                        <h3 class="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-3">Variationen</h3>
+                        <div class="space-y-1">
+                            <template x-for="v in (selected.variations||[])">
+                                <div x-on:click="v.is_parsed && v.overrides?.length ? toggleVariation(v) : null"
+                                    :class="{
+                                        'cursor-pointer hover:bg-white/[0.03] rounded-lg px-3 py-2 -mx-3 transition': v.is_parsed && v.overrides?.length,
+                                        'bg-accent/[0.06] ring-1 ring-accent/20 rounded-lg px-3 py-2 -mx-3': activeVariation?.id === v.id,
+                                        'opacity-40': !v.is_parsed && activeVariation === null,
+                                    }"
+                                    class="flex gap-3 text-sm items-start">
+                                    <span class="font-mono font-semibold min-w-[2rem] shrink-0 text-[13px]"
+                                        :class="activeVariation?.id === v.id ? 'text-accent' : (v.is_parsed ? 'text-accent/60' : 'text-white/20')"
+                                        x-text="v.variation_label + ')'"></span>
+                                    <span class="flex-1 text-white/50" x-show="!v.is_parsed || !v.overrides?.length" x-text="v.description"></span>
+                                    <span class="flex-1 flex gap-1.5 flex-wrap" x-show="v.is_parsed && v.overrides?.length">
+                                        <template x-for="o in (v.overrides||[])">
+                                            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/[0.03] border border-white/[0.06] font-mono text-[11px]">
+                                                <span class="text-white/25" x-text="o.target_sequence + ':'"></span>
+                                                <span class="font-semibold" :style="'color:' + getStrokeColor(o.new_stroke_type_code)" x-text="o.new_stroke_type_code"></span>
+                                            </span>
+                                        </template>
+                                    </span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                </div>
+            </template>
+        </main>
+    </div>
+</body>
+</html>

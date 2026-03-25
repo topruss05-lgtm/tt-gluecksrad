@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTSG Ostfildern — Aktionskarten Chips</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 48px;
+        }
+
+        .cards-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .card-row {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            background: #16213e;
+            border-radius: 16px;
+            padding: 20px 28px;
+            transition: transform 0.15s ease;
+        }
+
+        .card-row:hover {
+            transform: translateX(4px);
+        }
+
+        /* Chip */
+        .chip-container {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .chip {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.4),
+                inset 0 1px 2px rgba(255,255,255,0.1);
+        }
+
+        /* Outer ring (like poker chip edge) */
+        .chip::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.15);
+        }
+
+        /* Inner circle */
+        .chip::after {
+            content: '';
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.12);
+        }
+
+        /* Dashes on the chip edge */
+        .chip-edge {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+        }
+
+        .chip-edge span {
+            position: absolute;
+            width: 3px;
+            height: 10px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 1px;
+            left: 50%;
+            top: 0;
+            transform-origin: 1.5px 45px;
+        }
+
+        .chip-code {
+            position: relative;
+            z-index: 2;
+            font-weight: 800;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Color schemes per power level */
+        .power-1 .chip { background: radial-gradient(circle at 40% 35%, #4a8c5c, #2d6b3f); }
+        .power-1 .chip-code { color: #d4f5dc; }
+
+        .power-2 .chip { background: radial-gradient(circle at 40% 35%, #3a7bd5, #1e4d8c); }
+        .power-2 .chip-code { color: #d0e4ff; }
+
+        .power-3 .chip { background: radial-gradient(circle at 40% 35%, #c0392b, #8b1a1a); }
+        .power-3 .chip-code { color: #ffd4d0; }
+
+        /* Back side preview */
+        .chip-back {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.4),
+                inset 0 1px 2px rgba(255,255,255,0.1);
+            background: radial-gradient(circle at 40% 35%, #555, #333);
+        }
+
+        .chip-back::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.15);
+        }
+
+        .chip-back::after {
+            content: '';
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.12);
+        }
+
+        .chip-back-text {
+            position: relative;
+            z-index: 2;
+            font-weight: 800;
+            font-size: 0.7rem;
+            color: #ccc;
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+        }
+
+        .chip-back .chip-edge span {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Info */
+        .card-info {
+            flex: 1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+
+        .card-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .card-power {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .power-1 .card-power { background: #2d6b3f; color: #d4f5dc; }
+        .power-2 .card-power { background: #1e4d8c; color: #d0e4ff; }
+        .power-3 .card-power { background: #8b1a1a; color: #ffd4d0; }
+
+        .card-effect {
+            font-size: 0.95rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        /* Legend */
+        .legend {
+            max-width: 900px;
+            margin: 48px auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+
+        .legend-dot.green { background: #2d6b3f; }
+        .legend-dot.blue { background: #1e4d8c; }
+        .legend-dot.red { background: #8b1a1a; }
+
+        /* Back preview section */
+        .back-section {
+            max-width: 900px;
+            margin: 48px auto 0;
+            text-align: center;
+        }
+
+        .back-section h2 {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card-row { flex-direction: column; text-align: center; padding: 16px; }
+            .chip-container { flex-direction: row; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>TTSG Ostfildern — Aktionskarten</h1>
+<p class="subtitle">Chip-Preview (Draufsicht, 1:1 zum 3D-Druck) &middot; 40mm &times; 3mm Pokerchip-Format</p>
+
+<div class="legend">
+    <div class="legend-item"><div class="legend-dot green"></div> Power 1 — Leicht</div>
+    <div class="legend-item"><div class="legend-dot blue"></div> Power 2 — Mittel</div>
+    <div class="legend-item"><div class="legend-dot red"></div> Power 3 — Stark</div>
+</div>
+
+<div class="cards-grid" style="margin-top: 32px;">
+
+    <!-- Power 1: Daueraufschlag -->
+    <div class="card-row power-1">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">DA</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Daueraufschlag</span>
+                <span class="card-power">Power 1</span>
+            </div>
+            <p class="card-effect">Du hast den gesamten Satz Aufschlag. Der Gegner schlägt nicht auf.</p>
+        </div>
+    </div>
+
+    <!-- Power 1: Geschenk-Punkt -->
+    <div class="card-row power-1">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">+1</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Geschenk-Punkt</span>
+                <span class="card-power">Power 1</span>
+            </div>
+            <p class="card-effect">Du bekommst sofort 1 Gratis-Punkt. Kein Ballwechsel nötig.</p>
+        </div>
+    </div>
+
+    <!-- Power 2: Nur Vorhand -->
+    <div class="card-row power-2">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">VH</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Nur Vorhand</span>
+                <span class="card-power">Power 2</span>
+            </div>
+            <p class="card-effect">Gegner darf diesen Punkt nur mit Vorhand spielen.</p>
+        </div>
+    </div>
+
+    <!-- Power 2: Nur Rückhand -->
+    <div class="card-row power-2">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">RH</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Nur Rückhand</span>
+                <span class="card-power">Power 2</span>
+            </div>
+            <p class="card-effect">Gegner darf diesen Punkt nur mit Rückhand spielen.</p>
+        </div>
+    </div>
+
+    <!-- Power 2: Doppelt oder Nichts -->
+    <div class="card-row power-2">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">&times;2</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Doppelt oder Nichts</span>
+                <span class="card-power">Power 2</span>
+            </div>
+            <p class="card-effect">Dieser Punkt zählt doppelt — für beide Spieler. Wer gewinnt, bekommt 2 Punkte.</p>
+        </div>
+    </div>
+
+    <!-- Power 2: Zweite Chance -->
+    <div class="card-row power-2">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">2C</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Zweite Chance</span>
+                <span class="card-power">Power 2</span>
+            </div>
+            <p class="card-effect">Der nächste verlorene Punkt wird wiederholt. Einmal-Mulligan.</p>
+        </div>
+    </div>
+
+    <!-- Power 3: Falsche Hand -->
+    <div class="card-row power-3">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">FH</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Falsche Hand</span>
+                <span class="card-power">Power 3</span>
+            </div>
+            <p class="card-effect">Gegner muss diesen Punkt mit der schwachen Hand spielen.</p>
+        </div>
+    </div>
+
+    <!-- Power 3: Tausch -->
+    <div class="card-row power-3">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">TA</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Tausch</span>
+                <span class="card-power">Power 3</span>
+            </div>
+            <p class="card-effect">Punktestände werden sofort getauscht. Aus 2:8 wird 8:2.</p>
+        </div>
+    </div>
+
+    <!-- Power 3: Brättle -->
+    <div class="card-row power-3">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">BR</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Brättle</span>
+                <span class="card-power">Power 3</span>
+            </div>
+            <p class="card-effect">Gegner muss mit dem Vereins-Schrottschläger spielen. Gilt für den ganzen Satz.</p>
+        </div>
+    </div>
+
+    <!-- Power 3: Aufholjagd -->
+    <div class="card-row power-3">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">AJ</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Aufholjagd</span>
+                <span class="card-power">Power 3</span>
+            </div>
+            <p class="card-effect">Nur spielbar bei 4+ Punkten Rückstand. Du übernimmst den Punktestand des Gegners — Gleichstand!</p>
+        </div>
+    </div>
+
+    <!-- Power 3: Direktgewinn -->
+    <div class="card-row power-3">
+        <div class="chip-container">
+            <div class="chip">
+                <div class="chip-edge">
+                    <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+                </div>
+                <span class="chip-code">DG</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <span class="card-name">Direktgewinn</span>
+                <span class="card-power">Power 3</span>
+            </div>
+            <p class="card-effect">Du gewinnst diesen Satz sofort. Legendary — nur 1x im gesamten Deck!</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="back-section">
+    <h2>Rückseite (einheitlich für alle Chips)</h2>
+    <div style="display: flex; justify-content: center;">
+        <div class="chip-back">
+            <div class="chip-edge">
+                <span style="transform: rotate(0deg)"></span><span style="transform: rotate(30deg)"></span><span style="transform: rotate(60deg)"></span><span style="transform: rotate(90deg)"></span><span style="transform: rotate(120deg)"></span><span style="transform: rotate(150deg)"></span><span style="transform: rotate(180deg)"></span><span style="transform: rotate(210deg)"></span><span style="transform: rotate(240deg)"></span><span style="transform: rotate(270deg)"></span><span style="transform: rotate(300deg)"></span><span style="transform: rotate(330deg)"></span>
+            </div>
+            <span class="chip-back-text">TTSG<br>Ostfildern</span>
+        </div>
+    </div>
+</div>
+
+<div style="max-width: 900px; margin: 48px auto; padding: 20px; background: #16213e; border-radius: 12px; font-size: 0.85rem; color: #888; line-height: 1.7;">
+    <strong style="color: #aaa;">Regeln:</strong><br>
+    &bull; Schwächerer Spieler zieht verdeckt 2–4 Chips (je nach Spielstärke-Abstand)<br>
+    &bull; Chips werden vor dem Aufschlag gespielt (offen hinlegen)<br>
+    &bull; Max. 1 Chip pro Punkt aktiv<br>
+    &bull; Gespielte Chips kommen nach dem Match zurück in den Beutel<br>
+    &bull; Satz-Effekte (Liegestütz, Brättle) gelten bis Satzende
+</div>
+
+</body>
+</html>

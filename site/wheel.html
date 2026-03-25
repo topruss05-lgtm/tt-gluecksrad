@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TT-Glücksrad</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/wheel.css">
+</head>
+<body class="text-gray-200 min-h-screen flex flex-col select-none"
+      x-data="wheelApp()" x-init="init()" x-cloak>
+
+    <!-- Confetti overlay -->
+    <canvas x-ref="confettiCanvas" class="confetti-layer"></canvas>
+
+    <!-- Header -->
+    <header class="relative z-10 flex items-center justify-center py-3 shrink-0">
+        <h1 class="font-['Fredoka'] text-base font-bold tracking-widest uppercase">
+            <span class="text-white/70">Glücksrad</span>
+        </h1>
+    </header>
+
+    <!-- Main — fixed layout, nothing shifts -->
+    <div class="relative z-10 flex-1 flex flex-col items-center justify-center px-4 pb-5 min-h-0"
+         :class="shaking ? 'do-shake' : ''">
+
+        <!-- Wheel -->
+        <div class="wheel-stage shrink-0 mb-5"
+             :class="spinning ? 'is-spinning' : ''"
+             x-ref="stage"
+             @touchstart="onDown($event)"
+             @touchmove.prevent="onMove($event)"
+             @touchend="onUp()"
+             @mousedown.prevent="onDown($event)"
+             @mousemove="onMove($event)"
+             @mouseup="onUp()"
+             @mouseleave="onUp()">
+
+            <!-- Pointer (animated by spring-damper physics) -->
+            <div class="pointer-wrap" x-ref="pointerWrap">
+                <svg width="44" height="56" viewBox="0 0 44 56" fill="none">
+                    <path d="M22 54 L6 14 Q4 7 10 5 L34 5 Q40 7 38 14 Z" fill="#ff6b35"/>
+                    <circle cx="22" cy="10" r="6" fill="#fff" opacity=".9"/>
+                    <circle cx="22" cy="10" r="2.5" fill="#ff6b35"/>
+                </svg>
+            </div>
+
+            <!-- Rotating wheel (canvas only, no HTML labels) -->
+            <div class="wheel-rotate" :style="`transform:rotate(${rotation}deg)`">
+                <canvas x-ref="wheelCanvas" class="wheel-canvas"></canvas>
+            </div>
+
+            <!-- Fixed TT ball in center (does NOT rotate) -->
+            <div class="center-ball"></div>
+        </div>
+
+        <!-- Hint + Button — fixed height container so layout never shifts -->
+        <div class="h-[100px] flex flex-col items-center justify-center gap-1 shrink-0">
+            <p x-show="!spinning && !showResult && !showBallPick"
+               class="hint text-white/20 text-xs tracking-wide">Dreh am Rad</p>
+            <button @click="spin()" :disabled="spinning"
+                    x-show="!showResult && !showBallPick"
+                    class="spin-btn px-14 py-3.5 text-white font-['Fredoka'] font-bold text-2xl tracking-wide">
+                <span x-show="!spinning" class="relative z-10">Drehen</span>
+                <span x-show="spinning" class="relative z-10 animate-pulse tracking-widest">···</span>
+            </button>
+            <p x-show="!spinning && !showResult && !showBallPick"
+               class="text-white/12 text-[10px] tracking-wider">KOSTET 1 GEM</p>
+        </div>
+    </div>
+
+    <!-- Result overlay -->
+    <div x-show="showResult" x-transition.opacity.duration.300ms
+         class="fixed inset-0 z-50 result-bg bg-black/50 flex items-center justify-center"
+         @click="dismissResult()">
+        <div class="result-card text-center px-8 pt-10 pb-8 rounded-2xl max-w-[400px] w-[88vw] mx-4"
+             :class="{
+                 'rc-win': rType === 'win',
+                 'rc-lose': rType === 'lose',
+                 'rc-jackpot': rType === 'jackpot',
+                 'rc-special': rType === 'special',
+                 'rc-neutral': rType === 'neutral',
+             }"
+             @click.stop>
+
+            <!-- Title -->
+            <div class="result-title-anim font-['Fredoka'] text-5xl font-bold mb-2 relative text-white"
+                 :class="rType === 'jackpot' ? 'gold-shimmer' : ''"
+                 x-text="rTitle"></div>
+
+            <!-- Message -->
+            <div class="result-msg-anim text-white/60 text-lg mb-6 relative" x-html="rMsg"></div>
+
+            <!-- GEM COUNT (hidden for respin) -->
+            <div class="gem-hero relative mb-8" x-show="rPay >= 0">
+                <div class="font-['Fredoka'] font-bold leading-none text-white"
+                     :style="'font-size: ' + (rPay === 0 ? '5rem' : rPay >= 3 ? '7rem' : '6rem')">
+                    <span x-text="rPay"></span>
+                    <span class="text-[0.4em] ml-1 text-white/50">Gem</span>
+                </div>
+            </div>
+
+            <!-- Continue -->
+            <button @click="dismissResult()"
+                    class="px-10 py-2.5 rounded-full border-2 border-white/30 text-white/70 text-lg font-bold
+                           hover:border-white/60 hover:text-white transition relative">
+                Weiter
+            </button>
+        </div>
+    </div>
+
+    <!-- Ball pick overlay (Doppelt oder Nix) -->
+    <div x-show="showBallPick" x-transition.opacity.duration.250ms
+         class="fixed inset-0 z-40 result-bg bg-black/50 flex flex-col items-center justify-center">
+        <div class="font-['Fredoka'] text-5xl font-bold text-white mb-3">Doppelt oder Nix</div>
+        <p class="text-white/40 text-xl mb-8">Wähl einen Ball</p>
+        <div class="ball-pick-area">
+            <!-- Ball 0 -->
+            <div class="ball-container"
+                 :class="{ 'revealed': ball0Revealed, 'picked': _pickedBallIdx === 0 }"
+                 @click="pickBall(0)">
+                <div class="ball-flipper">
+                    <div class="ball-side ball-front">?</div>
+                    <div class="ball-side ball-back"
+                         :class="ballResults[0] ? 'is-win' : 'is-lose'"
+                         x-text="ballResults[0] ? '×2' : '×0'"></div>
+                </div>
+                <div class="ball-shadow"></div>
+            </div>
+            <!-- Ball 1 -->
+            <div class="ball-container"
+                 :class="{ 'revealed': ball1Revealed, 'picked': _pickedBallIdx === 1 }"
+                 @click="pickBall(1)">
+                <div class="ball-flipper">
+                    <div class="ball-side ball-front">?</div>
+                    <div class="ball-side ball-back"
+                         :class="ballResults[1] ? 'is-win' : 'is-lose'"
+                         x-text="ballResults[1] ? '×2' : '×0'"></div>
+                </div>
+                <div class="ball-shadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (order matters) -->
+    <script src="js/wheel-config.js"></script>
+    <script src="js/wheel-draw.js"></script>
+    <script src="js/wheel-audio.js"></script>
+    <script src="js/wheel-confetti.js"></script>
+    <script src="js/wheel-pointer.js"></script>
+    <script src="js/wheel-app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
