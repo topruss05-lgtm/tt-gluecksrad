@@ -8,12 +8,13 @@ function wheelApp() {
         segments: WHEEL_SEGMENTS,
         spinning: false,
         rotation: 0,
-        lossStreak: 0,
         shaking: false,
+        bet: 1,
+        betConfirmed: false, // true after player confirms bet → wheel unlocked
 
         // Result overlay
         showResult: false,
-        rType: '', rTitle: '', rMsg: '', rPay: 0,
+        rType: '', rTitle: '', rMsg: '', rPay: 0, rPartner: 0, rSteal: false,
         _pendingRespin: false,
 
         // Ball pick (Doppelt oder Nix)
@@ -59,7 +60,7 @@ function wheelApp() {
            ═══════════════════════════════════ */
 
         onDown(e) {
-            if (this.spinning) return;
+            if (this.spinning || !this.betConfirmed) return;
             const pt = e.touches ? e.touches[0] : e;
             const r = this.$refs.stage.getBoundingClientRect();
             const cx = r.left + r.width / 2;
@@ -106,7 +107,7 @@ function wheelApp() {
            ═══════════════════════════════════ */
 
         spin() {
-            if (this.spinning) return;
+            if (this.spinning || !this.betConfirmed) return;
             this.doSpin(0);
         },
 
@@ -150,11 +151,6 @@ function wheelApp() {
         },
 
         pickSegment() {
-            if (this.lossStreak >= 3) {
-                const ok = WHEEL_SEGMENTS.map((_, i) => i)
-                    .filter(i => !(WHEEL_SEGMENTS[i].type === 'mult' && WHEEL_SEGMENTS[i].mult === 0));
-                return ok[Math.floor(Math.random() * ok.length)];
-            }
             return Math.floor(Math.random() * WHEEL_N);
         },
 
@@ -227,36 +223,33 @@ function wheelApp() {
 
         resolve(idx) {
             const s = WHEEL_SEGMENTS[idx];
+            const b = this.bet;
 
             if (s.type === 'mult') {
+                const payout = b * s.mult;
                 if (s.mult === 0) {
-                    this.lossStreak++;
                     this.doShake();
-                    this.showRes('lose', null, 'Weg!', 'Gem verloren', 0);
+                    this.showRes('lose', 'Weg!',
+                        b === 1 ? 'Chip verloren' : `${b} Chips verloren`, 0);
                 } else if (s.mult === 1) {
-                    this.lossStreak = 0;
-                    this.showRes('neutral', null, 'Zurück', 'Gem gerettet', 1);
-                } else if (s.mult === 2) {
-                    this.lossStreak = 0;
-                    this.burstConfetti();
-                    this.showRes('win', null, 'Doppelt!', 'Du bekommst 2 Gems', 2);
+                    this.showRes('neutral', 'Zurück',
+                        b === 1 ? 'Chip gerettet' : `${b} Chips gerettet`, payout);
                 } else {
-                    this.lossStreak = 0;
-                    this.burstConfetti(80);
-                    this.showRes('jackpot', null, 'Dreifach!', 'Du bekommst 3 Gems', 3);
+                    this.burstConfetti();
+                    this.showRes('win', 'Doppelt!',
+                        `Du bekommst ${payout} Chips`, payout);
                 }
             } else if (s.type === 'respin') {
-                this.lossStreak = 0;
-                this.showRes('special', null, 'Netzroller!', 'Nochmal drehen', -1);
+                this._pendingRespin = true;
+                this.showRes('special', 'Netzroller!', 'Nochmal!', -1);
             } else if (s.type === 'steal') {
-                this.lossStreak = 0;
-                this.showRes('win', null, 'Abgezockt!', 'Gem zurück — und schnapp<br>dir noch einen von jemandem!', 1);
+                this.showRes('win', 'Abgezockt!',
+                    `${b === 1 ? 'Chip' : b + ' Chips'} zurück`, b, 0, true);
             } else if (s.type === 'doppel') {
-                this.lossStreak = 0;
                 this.burstConfetti(70);
-                this.showRes('jackpot', null, 'Doppel!', 'Du bekommst 2 Gems — wähl<br>einen Partner, der auch 2 bekommt', 2);
+                this.showRes('jackpot', 'Doppelsieg!',
+                    `Du bekommst ${b * 2} Chips<br>+ wähl einen Partner, der 1 Chip bekommt`, b * 2, 1);
             } else if (s.type === 'aon') {
-                // Randomly assign win to one of two balls
                 const winBall = Math.random() < 0.5 ? 0 : 1;
                 this.ballResults = [winBall === 0, winBall === 1];
                 this.ball0Revealed = false;
@@ -286,16 +279,15 @@ function wheelApp() {
                 this.ball1Revealed = true;
             }, 1200);
 
-            // 3) Show result popup ON TOP of the balls (don't close ball overlay first)
+            // 3) Show result popup ON TOP of the balls
             setTimeout(() => {
+                const b = this.bet;
                 if (this.ballResults[idx]) {
-                    this.lossStreak = 0;
                     this.burstConfetti();
-                    this.showRes('jackpot', null, 'Doppelt!', 'Richtig gewählt', 2);
+                    this.showRes('jackpot', 'Doppelt!', `Du bekommst ${b * 2} Chips`, b * 2);
                 } else {
-                    this.lossStreak++;
                     this.doShake();
-                    this.showRes('lose', null, 'Nix!', 'Falsch gewählt', 0);
+                    this.showRes('lose', 'Nix!', b === 1 ? 'Chip verloren' : `${b} Chips verloren`, 0);
                 }
                 // Close the ball overlay behind the result popup
                 this.showBallPick = false;
@@ -306,12 +298,15 @@ function wheelApp() {
            HELPERS
            ═══════════════════════════════════ */
 
-        showRes(type, _unused, title, msg, pay) {
+        showRes(type, title, msg, pay, partnerPay = 0, steal = false) {
             this.rType = type;
             this.rTitle = title;
             this.rMsg = msg;
             this.rPay = pay;
+            this.rPartner = partnerPay;
+            this.rSteal = steal;
             this.showResult = true;
+
             if (type === 'win' || type === 'jackpot') this._audio.playWin();
             else if (type === 'lose') this._audio.playLose();
         },
@@ -319,9 +314,12 @@ function wheelApp() {
         dismissResult() {
             this.showResult = false;
             if (this._pendingRespin) {
+                // Netzroller: stay on wheel, player spins again manually (same bet)
                 this._pendingRespin = false;
-                setTimeout(() => this.doSpin(0), 600);
+                return; // betConfirmed stays true, wheel is ready
             }
+            // Back to bet selection for next player
+            this.betConfirmed = false;
         },
 
         doShake() {

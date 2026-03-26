@@ -145,7 +145,15 @@ body {
     100% { opacity: 1; }
 }
 .result-msg-anim {
-    animation: msg-in 0.25s 0.2s ease both;
+    animation: msg-in 0.25s 0.15s ease both;
+}
+
+@keyframes bonus-in {
+    0% { transform: translateY(8px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+.result-bonus-anim {
+    animation: bonus-in 0.3s 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes gem-land {
