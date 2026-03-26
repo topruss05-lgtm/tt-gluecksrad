@@ -41,6 +41,15 @@ function wheelApp() {
             this._audio = new WheelAudio();
             this._pointer = new WheelPointer(this.$refs.pointerWrap);
 
+            // iOS/Android: AudioContext must be resumed from the FIRST user gesture
+            const unlockAudio = () => {
+                this._audio.resume();
+                document.removeEventListener('touchstart', unlockAudio);
+                document.removeEventListener('mousedown', unlockAudio);
+            };
+            document.addEventListener('touchstart', unlockAudio, { once: true });
+            document.addEventListener('mousedown', unlockAudio, { once: true });
+
             const cc = this.$refs.confettiCanvas;
             const resize = () => {
                 cc.width = innerWidth * devicePixelRatio;
